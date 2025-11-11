@@ -48,8 +48,16 @@ export const questionSet =
         question: "What type of vehicle are you looking for?",
         answers: [
             {
-                answer: "car",
+                answer: "4-door car",
                 modalContent: "The original shape for building four-wheeled machines. Being lower to the ground with slippery aerodynamics provides better handling and efficiency. Due to their smaller size, cars usually offer greater feature content per dollar than other vehicle types. They can be had in multiple forms depending on the number of rows and trunk space desired"
+            },
+            {
+                answer: "Coupe",
+                modalContent: "Two-door or no door. Less practical than a 4-door car, but quicker and more agile (not to mention easier to park)"
+            },
+            {
+                answer: "Wagon",
+                modalContent: "Longroofs are extremely practical, with spacious rear seats and trunks. Bonus benefit: they're very stable at speed because their ride height is similar to a car's"
             },
             {
                 answer: "SUV",
@@ -62,7 +70,7 @@ export const questionSet =
             {
                 answer: "van",
                 modalContent: "Physically, a box is the most efficient shape to package things in. Smooth out the box and you have yourself a van. Minivans are popular with families for their unique sliding doors, which ensure easy acccess to passengers without having to worry about denting other metal in the parking lot. Vans built as work trucks feature body-on-frame construction, enabling large payload capacities along with mobile, secure storage for businesses and tradesman"
-            }
+            },
         ]
     },
     {
@@ -164,27 +172,4 @@ export const questionSet =
             }
         ]
     },
-    {
-        // follow-up question for question id 7
-        id: 8,
-        question: "What type of vehicle are you looking for?",
-        answers: [
-            {
-                answer: "Coupe",
-                modalContent: "Two-door or no door. Less practical than a 4-door car, but quicker and more agile (not to mention easier to park)"
-            },
-            {
-                answer: "4-door car",
-                modalContent: "You want to drive a missile but couldn't give up the practicaly of rear seats. Or you enjoy driving a sleeper"
-            },
-            {
-                answer: "Hatchback",
-                modalContent: "Most of the perks of a coupe with the added bonus of a tall trunk. Can be made in variants with rear seats as well"
-            },
-            {
-                answer: "Wagon",
-                modalContent: "Longroofs are extremely practical, with spacious rear seats and trunks. Bonus benefit: they're very stable at speed because their ride height is similar to a car's"
-            }
-        ]
-    }
 ];
