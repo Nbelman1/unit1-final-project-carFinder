@@ -1,12 +1,15 @@
 import { useState } from 'react';
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import Question from './components/question-assets/Question';
-import { questionSet } from './components/question-assets/QuestionSet';
-import Modal from './components/question-assets/Modal';
+import Header from './components/main-page/Header';
+import Footer from './components/main-page/Footer';
+import Home from './components/main-page/Home';
+import Question from './components/quiz-questions/Question';
+import Modal from './components/quiz-questions/Modal';
 import ContactUs from './components/ContactUs';
+import VehicleCard from './components/render-vehicles/VehicleCard';
+import { questionSet } from './components/quiz-questions/QuestionSet';
+import { carData } from './components/render-vehicles/CarData';
+
 
 
 function App() {
@@ -18,6 +21,7 @@ function App() {
 			<Home />
 			<Question questionSet={questionSet} />
 			<Modal questionSet={questionSet} />
+			<VehicleCard carData={carData} />
 			<ContactUs />
 			<Footer />
     	</div>
