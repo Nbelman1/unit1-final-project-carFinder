@@ -9,8 +9,8 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "SUV",
         powertrain:  ["ICE", "HEV"],
-        imageSource: "",
-        tags: ["family-hauling", "commuting", "running-errands", "commuting", "trailheads"]
+        imageSource: "../../assets/images/vehicles/suv-2row.jpg",
+        tags: ["Family hauling", "Commuting", "Running errands", "Traversing trailheads"]
     },
     {
         id: 1,
@@ -21,7 +21,7 @@ export const carData = [
         vehicleShape: "SUV",
         powertrain:  ["ICE"],
         imageSource: "",
-        tags: ["commuting", "running-errands", "trailheads"]
+        tags: ["Commuting", "Running errands", "Traversing trailheads"]
     },
     {
         id: 2,
@@ -32,7 +32,7 @@ export const carData = [
         vehicleShape: "SUV",
         powertrain:  ["ICE", "HEV", "PHEV"],
         imageSource: "",
-        tags: ["family-hauling", "commuting", "running-errands", "ride-sharing", "trailheads"]
+        tags: ["Family hauling", "Commuting", "Running errands", "Ride sharing", "Traversing trailheads"]
     },
     {
         id: 3,
@@ -43,7 +43,7 @@ export const carData = [
         vehicleShape: "SUV",
         powertrain:  ["ICE"],
         imageSource: "",
-        tags: ["family-hauling", "running-errands", "ride-sharing"]
+        tags: ["Family hauling", "Running errands", "Ride sharing"]
     },
     {
         id: 4,
@@ -54,7 +54,7 @@ export const carData = [
         vehicleShape: "SUV",
         powertrain:  ["ICE"],
         imageSource: "",
-        tags: ["desert-dunes", "rocky-trails", "trailheads"]
+        tags: ["Desert dunes", "Rocky trails", "Traversing trailheads"]
     },
     {
         id: 5,
@@ -65,7 +65,7 @@ export const carData = [
         vehicleShape: "SUV",
         powertrain: ["ICE", "HEV"],
         imageSource: "",
-        tags: ["family-hauling", "running-errands", "ride-sharing"]
+        tags: ["Family hauling", "Running errands", "Ride sharing"]
     },
     {
         id: 6,
@@ -76,7 +76,7 @@ export const carData = [
         vehicleShape: "SUV",
         powertrain: ["ICE", "PHEV"],
         imageSource: "",
-        tags: ["family-hauling", "running-errands", "ride-sharing", "trailheads"]
+        tags: ["Family hauling", "Running errands", "Ride sharing", "Traversing trailheads"]
     },
     {
         id: 7,
@@ -87,7 +87,7 @@ export const carData = [
         vehicleShape: "SUV",
         powertrain: ["ICE", "PHEV"],
         imageSource: "",
-        tags: ["desert-dunes", "rocky-trails", "trailheads"]
+        tags: ["Desert dunes", "Rocky trails", "Traversing trailheads"]
     },
     {
         id: 8,
@@ -98,7 +98,7 @@ export const carData = [
         vehicleShape: "SUV",
         powertrain: ["ICE", "HEV"],
         imageSource: "",
-        tags: ["family-hauling", "running-errands", "rocky-trails", "trailheads"]
+        tags: ["Family hauling", "Running errands", "Rocky trails", "Traversing trailheads"]
     },
     {
         id: 9,
@@ -109,7 +109,7 @@ export const carData = [
         vehicleShape: "SUV",
         powertrain: ["ICE", "HEV"],
         imageSource: "",
-        tags: ["commuting", "running-errands", "ride-sharing", "trailheads"]
+        tags: ["Commuting", "Running errands", "Ride sharing", "Traversing trailheads"]
     },
     {
         id: 10,
@@ -120,7 +120,7 @@ export const carData = [
         vehicleShape: "SUV",
         powertrain: ["ICE"],
         imageSource: "",
-        tags: ["family-hauling", "towing-hauling", "transport-eq", "ride-sharing"]
+        tags: ["Family hauling", "Towing and hauling", "Transporting equipment", "Ride sharing"]
     },
     {
         id: 11,
@@ -131,7 +131,7 @@ export const carData = [
         vehicleShape: "SUV",
         powertrain: ["ICE"],
         imageSource: "",
-        tags: ["family-hauling", "towing-hauling", "ride-sharing", "trailheads"]
+        tags: ["Family hauling", "Towing and hauling", "Ride sharing", "Traversing trailheads"]
     },
     {
         id: 12,
@@ -142,7 +142,7 @@ export const carData = [
         vehicleShape: "SUV",
         powertrain: ["ICE"],
         imageSource: "",
-        tags: ["family-hauling", "towing-hauling", "transporting-eq", "ride-sharing", "trailheads"]
+        tags: ["Family hauling", "Towing and hauling", "Transporting equipment", "Ride sharing", "Traversing trailheads"]
     },
     {
         id: 13,
@@ -153,7 +153,7 @@ export const carData = [
         vehicleShape: "SUV",
         powertrain: ["HEV"],
         imageSource: "",
-        tags: ["family-hauling", "towing-hauling", "transporting-eq", "ride-sharing", "trailheads"]
+        tags: ["Family hauling", "Towing and hauling", "Transporting equipment", "Ride sharing", "Traversing trailheads"]
     },
     {
         id: 14,
@@ -164,7 +164,7 @@ export const carData = [
         vehicleShape: "SUV",
         powertrain: ["ICE"],
         imageSource: "",
-        tags: ["commuting", "running-errands"]
+        tags: ["Commuting", "Running errands"]
     },
     {
         id: 15,
@@ -175,7 +175,7 @@ export const carData = [
         vehicleShape: "SUV",
         powertrain: ["BEV"],
         imageSource: "",
-        tags: ["commuting", "running-errands", "ride-sharing"]
+        tags: ["Commuting", "Running errands", "Ride sharing"]
     },
     {
         id: 16,
@@ -186,7 +186,7 @@ export const carData = [
         vehicleShape: "SUV",
         powertrain: ["BEV"],
         imageSource: "",
-        tags: ["commuting", "running-errands", "ride-sharing"]
+        tags: ["Commuting", "Running errands", "Ride sharing"]
     },
     {
         id: 17,
@@ -197,7 +197,7 @@ export const carData = [
         vehicleShape: "SUV",
         powertrain: ["BEV"],
         imageSource: "",
-        tags: ["family-hauling", "commuting", "running-errands", "trailheads", "desert-dunes", "straight-line"]
+        tags: ["Family hauling", "Commuting", "Running errands", "Traversing trailheads", "Desert dunes", "straight-line"]
     },
     {
         id: 18,
@@ -208,7 +208,7 @@ export const carData = [
         vehicleShape: "SUV",
         powertrain: ["BEV"],
         imageSource: "",
-        tags: ["family-hauling", "commuting", "running-errands", "ride-sharing"]
+        tags: ["Family hauling", "Commuting", "Running errands", "Ride sharing"]
     },
     {
         id: 19,
@@ -219,7 +219,7 @@ export const carData = [
         vehicleShape: "car",
         powertrain: ["ICE"],
         imageSource: "",
-        tags: ["commuting", "running-errands", "ride-sharing"]
+        tags: ["Commuting", "Running errands", "Ride sharing"]
     },
     {
         id: 20,
@@ -230,7 +230,7 @@ export const carData = [
         vehicleShape: "car",
         powertrain: ["ICE", "HEV"],
         imageSource: "",
-        tags: ["commuting", "running-errands", "ride-sharing"]
+        tags: ["Commuting", "Running errands", "Ride sharing"]
     },
     {
         id: 21,
@@ -241,7 +241,7 @@ export const carData = [
         vehicleShape: "car",
         powertrain: ["HEV", "PHEV"], 
         imageSource: "",
-        tags: ["commuting", "running-errands", "ride-sharing"]
+        tags: ["Commuting", "Running errands", "Ride sharing"]
     },
     {
         id: 22,
@@ -252,7 +252,7 @@ export const carData = [
         vehicleShape: "car",
         powertrain: ["ICE", "HEV"],
         imageSource: "",
-        tags: ["commuting", "running-errands", "ride-sharing"]
+        tags: ["Commuting", "Running errands", "Ride sharing"]
     },
     {
         id: 23,
@@ -263,7 +263,7 @@ export const carData = [
         vehicleShape: "car",
         powertrain: ["HEV"], 
         imageSource: "",
-        tags: ["commuting", "running-errands", "ride-sharing"]
+        tags: ["Commuting", "Running errands", "Ride sharing"]
     },
     {
         id: 24,
@@ -274,7 +274,7 @@ export const carData = [
         vehicleShape: "car",
         powertrain: ["ICE", "HEV"],
         imageSource: "",
-        tags: ["commuting", "running-errands", "ride-sharing"]
+        tags: ["Commuting", "Running errands", "Ride sharing"]
     },
     {
         id: 25,
@@ -296,7 +296,7 @@ export const carData = [
         vehicleShape: "coupe",
         powertrain: ["ICE"],
         imageSource: "",
-        tags: ["thrill-rides", "running-errands", "commuting"]
+        tags: ["thrill-rides", "Running errands", "Commuting"]
     },
     {
         id: 27,
@@ -351,7 +351,7 @@ export const carData = [
         vehicleShape: "coupe", 
         powertrain: ["ICE"],
         imageSource: "",
-        tags: ["thrill-rides", "running-errands"]
+        tags: ["thrill-rides", "Running errands"]
     },
     {
         id: 32,
@@ -373,7 +373,7 @@ export const carData = [
         vehicleShape: "wagon",
         powertrain: ["ICE"], // mild hybrid
         imageSource: "",
-        tags: ["family-hauling", "commuting", "running-errands", "trailheads"]
+        tags: ["Family hauling", "Commuting", "Running errands", "Traversing trailheads"]
     },
     {
         id: 34,
@@ -384,7 +384,7 @@ export const carData = [
         vehicleShape: "wagon",  
         powertrain: ["ICE"],
         imageSource: "",
-        tags: ["family-hauling", "commuting", "running-errands", "trailheads"]
+        tags: ["Family hauling", "Commuting", "Running errands", "Traversing trailheads"]
     },
     {
         id: 35,
@@ -395,7 +395,7 @@ export const carData = [
         vehicleShape: "wagon",  
         powertrain: ["ICE"],
         imageSource: "",
-        tags: ["family-hauling", "commuting", "running-errands", "trailheads"]
+        tags: ["Family hauling", "Commuting", "Running errands", "Traversing trailheads"]
     },
     {
         id: 36,
@@ -406,7 +406,7 @@ export const carData = [
         vehicleShape: "wagon",  
         powertrain: ["ICE"], // mild hybrid
         imageSource: "",
-        tags: ["family-hauling", "commuting", "running-errands", "trailheads"]
+        tags: ["Family hauling", "Commuting", "Running errands", "Traversing trailheads"]
     },
     {
         id: 37,
@@ -417,7 +417,7 @@ export const carData = [
         vehicleShape: "wagon",  
         powertrain: ["ICE"], // mild hybrid
         imageSource: "",
-        tags: ["family-hauling", "time-attack", "thrill-rides", "straight-line"]
+        tags: ["Family hauling", "time-attack", "thrill-rides", "straight-line"]
     },
     {
         id: 38,
@@ -428,7 +428,7 @@ export const carData = [
         vehicleShape: "van",
         powertrain: ["ICE"],
         imageSource: "",
-        tags: ["towing-hauling", "transporting-eq"]
+        tags: ["Towing and hauling", "Transporting equipment"]
     },
     {
         id: 39,
@@ -439,7 +439,7 @@ export const carData = [
         vehicleShape: "van",
         powertrain: ["ICE"],
         imageSource: "",
-        tags: ["towing-hauling", "transporting-eq"]
+        tags: ["Towing and hauling", "Transporting equipment"]
     },
     {
         id: 40,
@@ -450,7 +450,7 @@ export const carData = [
         vehicleShape: "van",
         powertrain: ["BEV"],
         imageSource: "",
-        tags: ["transporting-eq"]
+        tags: ["Transporting equipment"]
     },
     {
         id: 41,
@@ -461,7 +461,7 @@ export const carData = [
         vehicleShape: "van",
         powertrain: ["BEV"],
         imageSource: "",
-        tags: ["transporting-eq"]
+        tags: ["Transporting equipment"]
     },
     {
         id: 42,
@@ -472,7 +472,7 @@ export const carData = [
         vehicleShape: "van",
         powertrain: ["HEV"],
         imageSource: "",
-        tags: ["family-hauling", "running-errands", "ride-sharing"]
+        tags: ["Family hauling", "Running errands", "Ride sharing"]
     },
     {
         id: 43,
@@ -483,7 +483,7 @@ export const carData = [
         vehicleShape: "van",
         powertrain: ["ICE","PHEV"],
         imageSource: "",
-        tags: ["family-hauling", "running-errands", "ride-sharing"]
+        tags: ["Family hauling", "Running errands", "Ride sharing"]
     },
     {
         id: 44,
@@ -494,7 +494,7 @@ export const carData = [
         vehicleShape: "van",
         powertrain: ["ICE", "HEV"], 
         imageSource: "",
-        tags: ["family-hauling", "running-errands", "ride-sharing"]
+        tags: ["Family hauling", "Running errands", "Ride sharing"]
     },
     {
         id: 45,
@@ -505,7 +505,7 @@ export const carData = [
         vehicleShape: "truck",
         powertrain: ["ICE"],
         imageSource: "",
-        tags: ["towing-hauling", "transporting-eq", "desert-dunes", "rocky-trails", "trailheads", "straight-line"]
+        tags: ["Towing and hauling", "Transporting equipment", "Desert dunes", "Rocky trails", "Traversing trailheads", "straight-line"]
     },
     {
         id: 46,
@@ -516,7 +516,7 @@ export const carData = [
         vehicleShape: "truck",
         powertrain: ["ICE"],
         imageSource: "",
-        tags: ["towing-hauling", "transporting-eq", "rocky-trails", "trailheads"]
+        tags: ["Towing and hauling", "Transporting equipment", "Rocky trails", "Traversing trailheads"]
     },
     {
         id: 47,
@@ -527,7 +527,7 @@ export const carData = [
         vehicleShape: "truck",
         powertrain: ["HEV","ICE"], 
         imageSource: "",
-        tags: ["commuting", "running-errands", "towing-hauling", "transporting-eq", "trailheads"]
+        tags: ["Commuting", "Running errands", "Towing and hauling", "Transporting equipment", "Traversing trailheads"]
     },
     {
         id: 48,
@@ -538,7 +538,7 @@ export const carData = [
         vehicleShape: "truck",
         powertrain: ["ICE"],
         imageSource: "",
-        tags: ["towing-hauling", "transporting-eq", "trailheads"]
+        tags: ["Towing and hauling", "Transporting equipment", "Traversing trailheads"]
     },
     {
         id: 49,
@@ -549,7 +549,7 @@ export const carData = [
         vehicleShape: "truck",
         powertrain: ["ICE","HEV"],
         imageSource: "",
-        tags: ["towing-hauling", "transporting-eq", "desert-dunes", "rocky-trails", "trailheads"]
+        tags: ["Towing and hauling", "Transporting equipment", "Desert dunes", "Rocky trails", "Traversing trailheads"]
     },
     {
         id: 50,
@@ -560,6 +560,6 @@ export const carData = [
         vehicleShape: "truck",
         powertrain: ["BEV"],
         imageSource: "",
-        tags: ["transporting-eq", "rocky-trails", "trailheads", "straight-line"]
+        tags: ["Transporting equipment", "Rocky trails", "Traversing trailheads", "straight-line"]
     }
 ];

@@ -19,6 +19,7 @@ function App() {
     	<div className="main-container flex-grow">
       		<Header />
 			<Home />
+			<VehicleCard carData={carData}/>
 			<Footer />
     	</div>
   	)
