@@ -2,20 +2,20 @@ const Header = () => {
   return (
     <div>
         <header>
-            <div>
+            <div className="nav-container">
 				{/* TODO: logo goes here, link it to home page */}
-				<img src="logo TBD" alt="CarFinder logo" />
+				<h1 className="logo">CarFinder</h1>
 
-                <nav>
-					<ul>
+                <nav className="nav-container">
+					<ul className="nav-links">
 						<li>
-							Find Your Car
+							Discover Your Car
+						</li>
+						<li>
+							View All Cars
 						</li>
 						<li>
 							Contact Us
-						</li>
-						<li>
-							Explore All Cars
 						</li>
 					</ul>
 				</nav>

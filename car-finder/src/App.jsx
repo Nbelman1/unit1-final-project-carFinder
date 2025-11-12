@@ -16,13 +16,9 @@ function App() {
 
 	return (
 		// TODO: add states to components - most are here for testing
-    	<div>
+    	<div className="main-container flex-grow">
       		<Header />
 			<Home />
-			<Question questionSet={questionSet} />
-			<Modal questionSet={questionSet} />
-			<VehicleCard carData={carData} />
-			<ContactUs />
 			<Footer />
     	</div>
   	)
