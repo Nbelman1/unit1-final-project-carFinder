@@ -1,17 +1,17 @@
 const Home = () => {
     return (
-        <div>
-            <h1 className="heading-h1 container">Welcome to CarFinder</h1>
+        <div className="container">
+            <h1>Welcome to CarFinder</h1>
             <br />
-            <h2 className="heading-h2 container">About Us</h2>
+            <h2>About Us</h2>
             <br />
-            <p className="text-para container">
+            <p>
                 Today's automotive landscape can sure be confusing, with most manufacturers changing their lineup every single year. It can require a full-time job to keep track of modern features, trim levels, and vehicle types.
             </p>
-            <p className="text-para container">
+            <p className="text-para">
                 Welcome to CarFinder, where we do the market research so you can find the vehicle that fits your needs, all from the comfort of your couch, your work desk, or even your current ride.
             </p>
-            <div className="text-para container">
+            <div className="text-para">
                 CarFinder is a free app that helps you: 
                 <ul>
                     <li>Learn about new makes and models available on the market</li>
