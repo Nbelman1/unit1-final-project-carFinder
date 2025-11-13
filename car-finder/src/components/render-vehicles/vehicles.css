@@ -27,11 +27,6 @@ img {
     margin: 20px 30px 20px 30px;
 }
 
-p {
-    font-size: 22px;
-}
-
-
 /* typical tablet width */
 @media (min-width: 768px) and (max-width: 1023px) {
     img {
@@ -53,9 +48,6 @@ p {
         flex-direction: column;
     }
 
-    p {
-        font-size: 24px;
-    }
 }
 
 
@@ -63,6 +55,7 @@ p {
 @media (max-width: 767px) {
     img {
         width: 300px;
+        height: auto;
         margin-bottom: -35px;
         margin-top: 25px;
     }
@@ -80,7 +73,4 @@ p {
         flex-direction: column;
     }
 
-    p {
-        font-size: 18px;
-    }
 }
