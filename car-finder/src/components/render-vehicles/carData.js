@@ -525,7 +525,7 @@ export const carData = [
         modelName: "Maverick",
         maxPassengers: 5, 
         vehicleShape: "truck",
-        powertrain: ["HEV","ICE"], 
+        powertrain: ["ICE", "HEV"], 
         imageSource: "../../assets/images/vehicles/truck-pickup-midsize.jpg",
         tags: ["Commuting", "Running errands", "Towing and hauling", "Transporting equipment", "Traversing trailheads"]
     },
