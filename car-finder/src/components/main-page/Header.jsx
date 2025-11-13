@@ -8,13 +8,13 @@ const Header = () => {
 
                 <nav className="nav-container">
 					<ul className="nav-links">
-						<li>
+						<li className="nav-links">
 							Discover Your Car
 						</li>
-						<li>
+						<li className="nav-links">
 							View All Cars
 						</li>
-						<li>
+						<li className="nav-links">
 							Contact Us
 						</li>
 					</ul>
