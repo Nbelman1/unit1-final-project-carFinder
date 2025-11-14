@@ -1,6 +1,6 @@
 const Home = () => {
     return (
-        <>
+        <div className="container">
             <h1>Welcome to CarFinder</h1>
             <br />
             <h2>About Us</h2>
@@ -12,16 +12,19 @@ const Home = () => {
                 Welcome to CarFinder, where we do the market research so you can find the vehicle that fits your needs, all from the comfort of your couch, your work desk, or even your current ride.
             </p>
             <div>
-                CarFinder is a free app that helps you: 
+                <p>CarFinder is a free app that helps you: </p> 
                 <ul>
                     <li>Learn about new makes and models available on the market</li>
                     <li>Explore different features and capabilities to fit your needs</li>
                     <li>Steer clear of pushy salespeople and walk into the showroom with confidence</li>
                 </ul>
-                Just tap the button below to get started!
+                <p>Just tap the button below to get started!</p>
             </div>
-            <button type='button'>Let's go!</button>
-        </>
+
+            <div className="button-centered">
+                <button type='button' className="button-standard yellow" >Let's go!</button>
+            </div>
+        </div>
     );
 };
 

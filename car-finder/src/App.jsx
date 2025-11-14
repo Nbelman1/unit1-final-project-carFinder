@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import './App.css';
+import './index.css';
+import "./components/main-page/main.css";
 import Header from './components/main-page/Header';
 import Footer from './components/main-page/Footer';
 import Home from './components/main-page/Home';
@@ -9,20 +10,22 @@ import ContactUs from './components/ContactUs';
 import VehicleCard from './components/render-vehicles/VehicleCard';
 import { questionSet } from './components/quiz-questions/QuestionSet';
 import { carData } from './components/render-vehicles/CarData';
-
+import FormSubmitted from './components/FormSubmitted';
+import LeaveConfirmation from './components/quiz-questions/LeaveConfirmation';
 
 
 function App() {
 
 	return (
 		// TODO: add states to components - most are here for testing
-    	<div>
+    	<div className="main-container flex-grow">
       		<Header />
 			<Home />
-			<Question questionSet={questionSet} />
-			<Modal questionSet={questionSet} />
 			<VehicleCard carData={carData} />
+			<Question questionSet={questionSet} />
 			<ContactUs />
+			<FormSubmitted />
+			<LeaveConfirmation />
 			<Footer />
     	</div>
   	)
