@@ -6,20 +6,15 @@
 /* black: #FBFFFE */
 /* yellow: #FAA916 */
 
-body, #root {
+body {
     background-color: #FBFFFE;
     margin: 0;
+    padding: 0;
     font-family: "Lexend", sans-serif;
     color: #1B1B1E;
     min-height: 100vh;  
     display: flex;
     flex-direction: column;
-}
-
-body {
-    background-color: #FBFFFE;
-    margin: 0;
-    padding: 0;
 }
 
 /* expands elements so footer stays on bottom */
@@ -37,12 +32,57 @@ h2 {
     font-size: 36px;
 }
 
-ul, li, p {
+ul, li, p, label {
     font-size: 22px;
 }
 
 img {
     width: 570px;
+    height: auto;
+}
+
+textarea {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 3vh;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    padding: 8px; 
+}
+
+label {
+    margin-left: 0;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+input {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+legend {
+    font-size: 28px;
+    text-shadow: 1px 1px 1px #96031a;
+    font-family: "Sriracha", cursive;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.header-image {
+    width: 85%;
     height: auto;
 }
 
@@ -58,20 +98,44 @@ img {
     text-shadow: 2px 4px 4px #1B1B1E;
 }
 
-.button-center {
-    display: block;
-    margin: 40px auto 0 auto;
+.centered {
+    flex-direction: column;
+    align-items: center;
+}
+
+.centered, .button-centered {
+    display: flex;
+    justify-content: center;
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
+}
+
+.radio-container div {
+    text-align: left;
 }
 
 .button-standard {
-    background-color: #FAA916;
-    color: #1B1B1E;
     padding: 10px 20px;
     border-radius: 5px;
     max-width: 15vw;
     font-size: 20px;
     font-family: "Sriracha", cursive;
     cursor: pointer;
+}
+
+.red {
+    background-color: #96031a;
+    color: #FBFFFE;
+}
+
+.yellow {
+    background-color: #FAA916;
+    color: #1B1B1E;
 }
 
 /* typical tablet width (portrait) */
@@ -84,7 +148,7 @@ img {
         font-size: 28px;
     }
 
-    p, ul, li {
+    p, ul, li, label {
         font-size: 24px;
     }
 
@@ -102,13 +166,14 @@ img {
 @media (max-width: 767px) {
     h1 {
         font-size: 28px;
+        margin-top: 5vh;
     }
 
     h2 {
         font-size: 24px;
     }
 
-    p, ul, li {
+    p, ul, li, label {
         font-size: 18px;
     }
 
@@ -120,6 +185,14 @@ img {
 
     .logo {
         font-size: 36px;
+    }
+
+    fieldset {
+        padding: 10px;
+    }
+
+    .header-image {
+        margin-bottom: 5px;
     }
 
 }

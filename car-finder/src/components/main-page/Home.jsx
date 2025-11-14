@@ -20,7 +20,10 @@ const Home = () => {
                 </ul>
                 <p>Just tap the button below to get started!</p>
             </div>
-            <button type='button' className="button-standard button-center" >Let's go!</button>
+
+            <div className="button-centered">
+                <button type='button' className="button-standard yellow" >Let's go!</button>
+            </div>
         </div>
     );
 };
