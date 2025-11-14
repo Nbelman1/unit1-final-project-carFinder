@@ -10,7 +10,8 @@ import ContactUs from './components/ContactUs';
 import VehicleCard from './components/render-vehicles/VehicleCard';
 import { questionSet } from './components/quiz-questions/QuestionSet';
 import { carData } from './components/render-vehicles/CarData';
-
+import FormSubmitted from './components/FormSubmitted';
+import LeaveConfirmation from './components/quiz-questions/LeaveConfirmation';
 
 
 function App() {
@@ -20,7 +21,11 @@ function App() {
     	<div className="main-container flex-grow">
       		<Header />
 			<Home />
-			<VehicleCard carData={carData}/>
+			<VehicleCard carData={carData} />
+			<Question questionSet={questionSet} />
+			<ContactUs />
+			<FormSubmitted />
+			<LeaveConfirmation />
 			<Footer />
     	</div>
   	)
