@@ -3,7 +3,7 @@
 /* gray: #9d939f */
 /* white: #FBFFFE */
 /* red: #96031a */
-/* black: #FBFFFE */
+/* black: #1B1B1E */
 /* yellow: #FAA916 */
 
 body {
@@ -39,6 +39,8 @@ ul, li, p, label {
 img {
     width: 570px;
     height: auto;
+    border: 2px solid #1B1B1E;
+    border-radius: 25px;
 }
 
 textarea {
@@ -70,8 +72,9 @@ input {
 
 legend {
     font-size: 28px;
-    text-shadow: 1px 1px 1px #96031a;
+    text-shadow: 1px 1px 1px #FAA916;
     font-family: "Sriracha", cursive;
+    color: #1B1B1E;
 }
 
 fieldset {
