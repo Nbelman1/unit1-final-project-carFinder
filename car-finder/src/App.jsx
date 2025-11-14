@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import "./components/main-page/main.css";
 import Header from './components/main-page/Header';
@@ -18,16 +19,19 @@ function App() {
 
 	return (
 		// TODO: add states to components - most are here for testing
-    	<div className="main-container flex-grow">
-      		<Header />
-			<Home />
-			<VehicleCard carData={carData} />
-			<Question questionSet={questionSet} />
-			<ContactUs />
-			<FormSubmitted />
-			<LeaveConfirmation />
+		<div className="main-container flex-grow">
+			<Header />
+
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/quiz/question-1" element={<Question />} />
+				{/* <Route path="/complete-list" element={<CompleteList carData={carData}/>} /> */}
+				<Route path="/contact-us" element={<ContactUs />} />
+				<Route path="/form-submitted" element={<FormSubmitted />} />
+			</Routes>
+			
 			<Footer />
-    	</div>
+		</div>
   	)
 }
 
