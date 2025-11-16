@@ -85,20 +85,13 @@ fieldset {
 }
 
 .header-image {
-    width: 85%;
+    width: 60%;
     height: auto;
 }
 
 .container {
     margin-left: 5vw;
     margin-right: 5vw;
-}
-
-.logo {
-    font-size: 60px;
-    color: #9d939f;
-    margin-left: 5vw;
-    text-shadow: 2px 4px 4px #1B1B1E;
 }
 
 .centered {

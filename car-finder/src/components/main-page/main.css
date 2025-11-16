@@ -6,6 +6,13 @@
 /* black: #FBFFFE */
 /* yellow: #FAA916 */
 
+.logo {
+    font-size: 60px;
+    color: #9d939f;
+    margin-left: 5vw;
+    text-shadow: 2px 4px 4px #1B1B1E;
+}
+
 .nav-container {
     background-color: #96031a;
     color: #fbfffe;
@@ -23,6 +30,18 @@
     font-size: 28px;
 }
 
+/* overriding default styling of links */
+.nav-links a, .logo a {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+    border-radius: 0;
+    font-size: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    max-width: none;
+}
+
 .footer-container {
     background-color: #96031a;
     max-height: 4vh;
@@ -35,6 +54,14 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+}
+
+/* overriding styling of links */
+.footer-container a {
+    color: #fbfffe; 
+    text-decoration: none;
+    font-family: "Sriracha", cursive; 
+    font-size: 20px; 
 }
 
 footer {
