@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import formSubmittedHero from "../assets/images/hero-images/ford-mustang-interior.jpg";
+import formSubmittedHero from "/images/hero-images/ford-mustang-interior.jpg";
 
 const FormSubmitted = () => {
     return (

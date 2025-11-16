@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import leaveConfirmHero from "../../assets/images/hero-images/driving-on-highway.jpg";
+import leaveConfirmHero from "/images/hero-images/driving-on-highway.jpg";
 
 const LeaveConfirmation = () => {
     return (
