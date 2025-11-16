@@ -5,7 +5,6 @@ const Header = () => {
     <div>
         <header>
             <div className="nav-container">
-				{/* TODO: logo goes here, link it to home page */}
 				<h1 className="logo"><Link to="/">CarFinder</Link></h1>
 
                 <nav className="nav-container">
@@ -14,7 +13,7 @@ const Header = () => {
 							<Link to="/quiz/question">Start Quiz</Link>
 						</li>
 						<li className="nav-links">
-							View All Cars
+							<Link to="/complete-list">View All Cars</Link>
 						</li>
 						<li className="nav-links">
 							<Link to="/contact-us">Contact Us</Link>
