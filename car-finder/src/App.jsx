@@ -13,6 +13,7 @@ import { questionSet } from './components/quiz-questions/QuestionSet';
 import { carData } from './components/render-vehicles/CarData';
 import FormSubmitted from './components/FormSubmitted';
 import LeaveConfirmation from './components/quiz-questions/LeaveConfirmation';
+import CompleteList from './components/render-vehicles/CompleteList';
 
 
 function App() {
@@ -21,11 +22,10 @@ function App() {
 		// TODO: add states to components - most are here for testing
 		<div className="main-container flex-grow">
 			<Header />
-
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/quiz/question" element={<Question questionSet={questionSet}/>} />
-				{/* <Route path="/complete-list" element={<CompleteList carData={carData}/>} /> */}
+				<Route path="/complete-list" element={<CompleteList carData={carData}/>} />
 				<Route path="/contact-us" element={<ContactUs />} />
 				<Route path="/form-submitted" element={<FormSubmitted />} />
 				<Route path="leave-confirmation" element={<LeaveConfirmation />} />
