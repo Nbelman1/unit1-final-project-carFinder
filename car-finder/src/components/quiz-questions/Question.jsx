@@ -1,4 +1,7 @@
 import './question.css';
+import { Link } from 'react-router';
+
+// TODO: push footer to bottom
 
 const Question = ({ questionSet }) => {
     return (
@@ -39,7 +42,7 @@ const Question = ({ questionSet }) => {
             
             <div className="button-container">
                 {/* TODO: link to LeaveConfirmation page */}
-                <button type="button" className="button-standard red">Start over</button>
+                <Link to="/leave-confirmation" className="button-standard red">Start over</Link>
                 {/* TODO: change "next question" button to "view my options" on final question */}
                 {/* TODO: render next question and answers */}
                 <button type="button" className="button-standard yellow">Next question</button>

@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const Home = () => {
     return (
         <div className="container">
@@ -22,7 +24,7 @@ const Home = () => {
             </div>
 
             <div className="button-centered">
-                <button type='button' className="button-standard yellow" >Let's go!</button>
+                <Link to="/quiz/question" className="button-standard yellow">Let's go!</Link>
             </div>
         </div>
     );

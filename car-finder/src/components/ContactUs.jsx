@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const ContactUs = () => {
     return (
         <div className="container"> 
@@ -31,7 +33,7 @@ const ContactUs = () => {
 
                 {/* TODO: link button to htmlFormSubmitted page */}
                 <div className="button-centered">
-                    <button type="submit" className="button-standard yellow">Send it!</button>
+                    <Link to="/form-submitted" className="button-standard yellow">Send it!</Link>
                 </div>
 
             </fieldset>
