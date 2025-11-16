@@ -24,10 +24,11 @@ function App() {
 
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/quiz/question-1" element={<Question />} />
+				<Route path="/quiz/question" element={<Question questionSet={questionSet}/>} />
 				{/* <Route path="/complete-list" element={<CompleteList carData={carData}/>} /> */}
 				<Route path="/contact-us" element={<ContactUs />} />
 				<Route path="/form-submitted" element={<FormSubmitted />} />
+				<Route path="leave-confirmation" element={<LeaveConfirmation />} />
 			</Routes>
 			
 			<Footer />
