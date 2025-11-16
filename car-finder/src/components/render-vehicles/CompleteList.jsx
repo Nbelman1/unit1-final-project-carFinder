@@ -1,10 +1,21 @@
-import VehicleCard from "../VehicleCard";
+import VehicleCard from "./VehicleCard";
+import { carData } from "./CarData";
+import { Link } from "react-router";
 
 const CompleteList = ({ carData }) => {
+
+
+    const renderCompleteList = () => {
+        return carData.map((car) => <VehicleCard key={car.id} id={car.id} />);
+    } 
+
     return (
-        <>
-            {/* TODO: map through all vehicles, render VehicleCards */}
-        </>
+        <div>
+            <div>{renderCompleteList()}</div>
+            <div className="button-centered">
+                <Link to="/" className="button-standard yellow">Go Home</Link>
+            </div>
+        </div>
     );
 };
 

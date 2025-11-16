@@ -1,8 +1,9 @@
 import "./vehicles.css";
+import { carData } from "./CarData";
 
-const VehicleCard = ({ carData, carId }) => {
+const VehicleCard = ({ id }) => {
 
-    const car = carData[carId];
+    const car = carData[id];
     const vehicleModel = `${car.modelYear} ${car.manufacturer} ${car.modelName}`;
     const powertrains = car.powertrain.join(", "); // join() keeps powertrain options in single line 
     const tags = car.tags.join(", ");
