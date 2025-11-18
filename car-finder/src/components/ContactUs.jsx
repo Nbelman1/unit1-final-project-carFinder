@@ -31,9 +31,10 @@ const ContactUs = () => {
                     <textarea id="feedback" name="feedback" rows="5" placeholder="Enter your questions, comments, or concerns" maxLength="1000" required></textarea>
                 </form>
 
-                {/* TODO: link button to htmlFormSubmitted page */}
+                {/* TODO: link button to FormSubmitted component */}
                 <div className="button-centered">
-                    <Link to="/form-submitted" className="button-standard yellow">Send it!</Link>
+                    <button type="submit" className="button-standard yellow">Send it</button>
+                    {/* TODO: add validation and error message for required entry */}
                 </div>
 
             </fieldset>
