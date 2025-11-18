@@ -13,7 +13,7 @@ const LeaveConfirmation = () => {
             <p>Heads up - by starting over, you will lose all your progress. Are you sure you want to restart?</p>
 
             <div className="button-container">
-                <Link to="/quiz/question" className="button-standard red">Start over</Link>
+                <Link to="/quiz" className="button-standard red">Start over</Link>
                 {/* TODO: change "next question" button to "view my options" on final question */}
                 {/* TODO: LINK return to previous question */}
                 <button type="button" className="button-standard yellow">Continue quiz</button>
