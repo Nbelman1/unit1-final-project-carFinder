@@ -10,7 +10,7 @@ const Header = () => {
                 <nav className="nav-container">
 					<ul className="nav-links">
 						<li className="nav-links">
-							<Link to="/quiz/question">Start Quiz</Link>
+							<Link to="/quiz">Start Quiz</Link>
 						</li>
 						<li className="nav-links">
 							<Link to="/complete-list">View All Cars</Link>
