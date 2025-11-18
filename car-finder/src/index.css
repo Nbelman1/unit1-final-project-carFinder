@@ -84,6 +84,10 @@ fieldset {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 .header-image {
     width: 60%;
     height: auto;
@@ -127,11 +131,30 @@ fieldset {
 .red {
     background-color: #96031a;
     color: #FBFFFE;
+    border: 2px solid #1B1B1E;
 }
 
 .yellow {
     background-color: #FAA916;
     color: #1B1B1E;
+    border: 2px solid #1B1B1E;
+}
+
+.gray {
+    background-color: #9d939f;
+    color: #1B1B1E;
+    text-shadow: 1px 1px 1px #FAA916;
+    border: 2px solid #1B1B1E;
+}
+
+.display-none {
+    display: none;
+}
+
+.error-message {
+    color: #96031a;
+    margin-top: -10px;
+    font-size: 18px;
 }
 
 /* typical tablet width (portrait) */
