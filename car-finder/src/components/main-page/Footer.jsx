@@ -1,3 +1,5 @@
+// TODO: push footer to bottom
+
 const Footer = () => {
     return (
         <footer className="footer-container">
