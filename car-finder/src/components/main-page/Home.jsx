@@ -24,7 +24,7 @@ const Home = () => {
             </div>
 
             <div className="button-centered">
-                <Link to="/quiz/question" className="button-standard yellow">Let's go!</Link>
+                <Link to="/quiz" className="button-standard yellow">Let's go!</Link>
             </div>
         </div>
     );
