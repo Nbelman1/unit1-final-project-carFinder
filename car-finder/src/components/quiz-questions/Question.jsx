@@ -4,12 +4,11 @@ import { Link } from 'react-router';
 import { followUpQuestions, mainQuestions } from './QuestionSet';
 
 
-const Question = () => {
+const Question = ({ userAnswers, setUserAnswers }) => {
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [errorMessage, setErrorMessage] = useState("");
     const [userResponse, setUserResponse] = useState("");
-    const [userAnswers, setUserAnswers] = useState([]); // array to track user's answers to show relevant results
     const [showingFollowUp, setShowingFollowUp] = useState(false);
 
     const getQuestionToShow = () => {
@@ -83,7 +82,6 @@ const Question = () => {
             setUserAnswers([...userAnswers, userResponse]);
             setErrorMessage("");
             setUserResponse("");
-            
             // after answering follow-up, return to main questions
             if (currentQuestion === 1 && !showingFollowUp) {
                 setShowingFollowUp(true);
@@ -99,7 +97,12 @@ const Question = () => {
     const getButton = () => {
         if (currentQuestion === mainQuestions.length - 1) {
             return (
-                <Link to="/results" className="button-standard gray">Show results</Link>
+                <Link 
+                to="/results" className="button-standard gray"
+                onClick={validateForm}
+                >
+                    Show results
+                </Link>
             )
         } else {
             return (
