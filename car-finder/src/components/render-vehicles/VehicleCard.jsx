@@ -1,5 +1,5 @@
 import "./vehicles.css";
-import { carData } from "./CarData";
+import { carData } from "./carData.js";
 
 const VehicleCard = ({ id }) => {
 
