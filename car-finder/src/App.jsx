@@ -7,17 +7,20 @@ import Home from './components/main-page/Home';
 import Question from './components/quiz-questions/Question';
 import Modal from './components/quiz-questions/Modal';
 import ContactUs from './components/ContactUs';
-import { carData } from './components/render-vehicles/CarData';
+import { carData } from './components/render-vehicles/carData';
 import FormSubmitted from './components/FormSubmitted';
 import LeaveConfirmation from './components/quiz-questions/LeaveConfirmation';
 import CompleteList from './components/render-vehicles/CompleteList';
 import Results from './components/render-vehicles/Results';
+import { useState } from 'react';
 
 
 function App() {
 
+	const [userAnswers, setUserAnswers] = useState([]);
+
 	return (
-		// TODO: add states to components - most are here for testing
+		
 		<div className="main-container flex-grow">
 			<Header />
 			<Routes>
@@ -26,10 +29,9 @@ function App() {
 				<Route path="/contact-us" element={<ContactUs />} />
 				<Route path="/form-submitted" element={<FormSubmitted />} />
 				<Route path="/leave-confirmation" element={<LeaveConfirmation />} />
-				<Route path="/quiz" element={<Question />} />
-				<Route path="/results" element={<Results />} />
+				<Route path="/quiz" element={<Question userAnswers={userAnswers} setUserAnswers={setUserAnswers}/>} />
+				<Route path="/results" element={<Results userAnswers={userAnswers}/>} />
 			</Routes>
-			
 			<Footer />
 		</div>
   	)
