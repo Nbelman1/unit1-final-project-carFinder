@@ -5,7 +5,7 @@ const Results = ({ userAnswers }) => {
     
     // convert number of passengers from string to a number that we can process
     const parsePassengers = () => {
-        if (userAnswers[2] === "1") {
+        if (userAnswers[2] === "0 to 1") {
             userAnswers.splice(2, 1, 2); // replace string "1" with maxPassengers of 2
             // driver plus 1 passenger can fit in 1- or more- row vehicles
         } else if (userAnswers[2] === "2 to 4") {
