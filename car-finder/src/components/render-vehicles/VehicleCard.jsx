@@ -17,7 +17,7 @@ const VehicleCard = ({ id }) => {
                 <p>Vehicle Type: <strong>{car.vehicleShape}</strong></p>
                 <p>Max passengers: <strong>{car.maxPassengers}</strong></p>
                 <p>Available Powertrains: <strong>{powertrains}</strong></p>
-                <p>Recommended uses cases: <strong>{tags}</strong></p>
+                <p>Recommended activities: <strong>{tags}</strong></p>
             </div>
         </div>
 
