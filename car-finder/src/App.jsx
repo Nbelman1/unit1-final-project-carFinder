@@ -18,18 +18,20 @@ import { useState } from 'react';
 function App() {
 
 	const [userAnswers, setUserAnswers] = useState([]);
+	const [userResponse, setUserResponse] = useState("");
+	const [currentQuestion, setCurrentQuestion] = useState(0);
 
 	return (
 		
 		<div className="main-container flex-grow">
-			<Header />
+			<Header setUserAnswers={setUserAnswers} setUserResponse={setUserResponse} setCurrentQuestion={setCurrentQuestion} />
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/complete-list" element={<CompleteList carData={carData}/>} />
 				<Route path="/contact-us" element={<ContactUs />} />
 				<Route path="/form-submitted" element={<FormSubmitted />} />
 				<Route path="/leave-confirmation" element={<LeaveConfirmation />} />
-				<Route path="/quiz" element={<Question userAnswers={userAnswers} setUserAnswers={setUserAnswers}/>} />
+				<Route path="/quiz" element={<Question userAnswers={userAnswers} setUserAnswers={setUserAnswers} userResponse={userResponse} setUserResponse={setUserResponse} currentQuestion={currentQuestion} setCurrentQuestion={setCurrentQuestion} />} />
 				<Route path="/results" element={<Results userAnswers={userAnswers}/>} />
 			</Routes>
 			<Footer />
