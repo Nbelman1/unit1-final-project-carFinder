@@ -29,7 +29,7 @@ export const mainQuestions =
         question: "How many people will be riding with you?",
         answer: [
             {
-                answerText: "1",
+                answerText: "0 to 1",
                 modalContent: "Riding solo or maybe with a copilot. Congrats, front row is where the most comfortable seats are"
             },
             {
@@ -52,11 +52,11 @@ export const mainQuestions =
                 modalContent: "The original shape for building four-wheeled machines. Being lower to the ground with slippery aerodynamics provides better handling and efficiency. Due to their smaller size, cars usually offer greater feature content per dollar than other vehicle types. They can be had in multiple forms depending on the number of rows and trunk space desired"
             },
             {
-                answerText: "Coupe",
+                answerText: "coupe",
                 modalContent: "Two-door or no door. Less practical than a 4-door car, but quicker and more agile (not to mention easier to park)"
             },
             {
-                answerText: "Wagon",
+                answerText: "wagon",
                 modalContent: "Longroofs are extremely practical, with spacious rear seats and trunks. Bonus benefit: they're very stable at speed because their ride height is similar to a car's"
             },
             {
@@ -103,7 +103,7 @@ export const followUpQuestions = [
     {
         // follow up question for "tackling daily life" answerText in question id 0
         id: 4,
-        question: "You want a vehicle to help tackle daily life - which one of these best fits your needs?",
+        question: "Which of these needs the most tackling?",
         answer: [
             {
                 answerText: "Family hauling",
@@ -122,7 +122,7 @@ export const followUpQuestions = [
 {
         // follow up question for "getting work done" answerText in question id 0
         id: 5,
-        question: "You want a tool to help get work done - what kind of work do you do?",
+        question: "What kind of work can a vehicular tool help you with?",
         answer: [
             {
                 answerText: "Towing and hauling",
