@@ -284,7 +284,7 @@ export const carData = [
         vehicleShape: "coupe", 
         powertrain: ["ICE"],
         imageSource: "/images/vehicles/car-coupe.jpg",
-        tags: ["Time attack", "Thrill ridess", "Straight-line performance"]
+        tags: ["Time attack", "Weekend thrill rides", "Straight-line performance"]
     },
     {
         id: 26,
@@ -295,7 +295,7 @@ export const carData = [
         vehicleShape: "coupe",
         powertrain: ["ICE"],
         imageSource: "/images/vehicles/car-coupe.jpg",
-        tags: ["Thrill ridess", "Running errands", "Commuting"]
+        tags: ["Weekend thrill rides", "Running errands", "Commuting"]
     },
     {
         id: 27,
@@ -306,7 +306,7 @@ export const carData = [
         vehicleShape: "coupe",
         powertrain: ["ICE"],
         imageSource: "/images/vehicles/car-coupe.jpg",
-        tags: ["Time attack", "Thrill ridess", "Straight-line performance"]
+        tags: ["Time attack", "Weekend thrill rides", "Straight-line performance"]
     },
     {
         id: 28,
@@ -317,7 +317,7 @@ export const carData = [
         vehicleShape: "coupe",
         powertrain: ["ICE"],
         imageSource: "/images/vehicles/car-coupe.jpg",
-        tags: ["Time attack", "Thrill ridess", "Straight-line performance"]
+        tags: ["Time attack", "Weekend thrill rides", "Straight-line performance"]
     },
     {
         id: 29,
@@ -328,7 +328,7 @@ export const carData = [
         vehicleShape: "coupe",
         powertrain: ["ICE"], // mild hybrid
         imageSource: "/images/vehicles/car-coupe.jpg",
-        tags: ["Thrill ridess", "Straight-line performance"]
+        tags: ["Weekend thrill rides", "Straight-line performance"]
     },
     {
         id: 30,
@@ -339,7 +339,7 @@ export const carData = [
         vehicleShape: "coupe",
         powertrain: ["ICE", "HEV"],
         imageSource: "/images/vehicles/car-coupe.jpg",
-        tags: ["Time attack", "Thrill ridess", "Straight-line performance"]
+        tags: ["Time attack", "Weekend thrill rides", "Straight-line performance"]
     },
     {
         id: 31,
@@ -350,7 +350,7 @@ export const carData = [
         vehicleShape: "coupe", 
         powertrain: ["ICE"],
         imageSource: "/images/vehicles/car-coupe.jpg",
-        tags: ["Thrill ridess", "Running errands"]
+        tags: ["Weekend thrill rides", "Running errands"]
     },
     {
         id: 32,
@@ -361,7 +361,7 @@ export const carData = [
         vehicleShape: "coupe", 
         powertrain: ["ICE"],
         imageSource: "/images/vehicles/car-coupe.jpg",
-        tags: ["Thrill ridess", "Straight-line performance"]
+        tags: ["Weekend thrill rides", "Straight-line performance"]
     },
     {
         id: 33,
@@ -416,7 +416,7 @@ export const carData = [
         vehicleShape: "wagon",  
         powertrain: ["ICE"], // mild hybrid
         imageSource: "/images/vehicles/car-wagon.jpg",
-        tags: ["Family hauling", "Time attack", "Thrill ridess", "Straight-line performance"]
+        tags: ["Family hauling", "Time attack", "Weekend thrill rides", "Straight-line performance"]
     },
     {
         id: 38,
