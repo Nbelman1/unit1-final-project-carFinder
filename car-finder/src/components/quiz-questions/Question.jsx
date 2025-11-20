@@ -4,11 +4,9 @@ import { Link } from 'react-router';
 import { followUpQuestions, mainQuestions } from './QuestionSet';
 
 
-const Question = ({ userAnswers, setUserAnswers }) => {
+const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, currentQuestion, setCurrentQuestion }) => {
 
-    const [currentQuestion, setCurrentQuestion] = useState(0);
     const [errorMessage, setErrorMessage] = useState("");
-    const [userResponse, setUserResponse] = useState("");
     const [showingFollowUp, setShowingFollowUp] = useState(false);
 
     const getQuestionToShow = () => {
