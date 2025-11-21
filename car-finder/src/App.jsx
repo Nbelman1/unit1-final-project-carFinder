@@ -5,7 +5,6 @@ import Header from './components/main-page/Header';
 import Footer from './components/main-page/Footer';
 import Home from './components/main-page/Home';
 import Question from './components/quiz-questions/Question';
-import Modal from './components/quiz-questions/Modal';
 import ContactUs from './components/ContactUs';
 import { carData } from './components/render-vehicles/carData';
 import FormSubmitted from './components/FormSubmitted';
@@ -24,15 +23,26 @@ function App() {
 	return (
 		
 		<div className="main-container flex-grow">
-			<Header setUserAnswers={setUserAnswers} setUserResponse={setUserResponse} setCurrentQuestion={setCurrentQuestion} />
+			<Header 
+				setUserAnswers={setUserAnswers} 
+				setUserResponse={setUserResponse} 
+				setCurrentQuestion={setCurrentQuestion} />
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/complete-list" element={<CompleteList carData={carData}/>} />
+				<Route path="/complete-list" element={<CompleteList 
+					carData={carData}/>} />
 				<Route path="/contact-us" element={<ContactUs />} />
 				<Route path="/form-submitted" element={<FormSubmitted />} />
 				<Route path="/leave-confirmation" element={<LeaveConfirmation />} />
-				<Route path="/quiz" element={<Question userAnswers={userAnswers} setUserAnswers={setUserAnswers} userResponse={userResponse} setUserResponse={setUserResponse} currentQuestion={currentQuestion} setCurrentQuestion={setCurrentQuestion} />} />
-				<Route path="/results" element={<Results userAnswers={userAnswers}/>} />
+				<Route path="/quiz" element={<Question 
+					userAnswers={userAnswers} 
+					setUserAnswers={setUserAnswers} 
+					userResponse={userResponse} 
+					setUserResponse={setUserResponse} 
+					currentQuestion={currentQuestion} 
+					setCurrentQuestion={setCurrentQuestion} />} />
+				<Route path="/results" element={<Results 
+					userAnswers={userAnswers}/>} />
 			</Routes>
 			<Footer />
 		</div>
