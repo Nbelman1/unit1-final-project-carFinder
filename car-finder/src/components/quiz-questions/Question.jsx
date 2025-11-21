@@ -3,11 +3,11 @@ import './question.css';
 import { Link } from 'react-router';
 import { followUpQuestions, mainQuestions } from './QuestionSet';
 
-
 const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, currentQuestion, setCurrentQuestion }) => {
 
     const [errorMessage, setErrorMessage] = useState("");
     const [showingFollowUp, setShowingFollowUp] = useState(false);
+    const [openModalIndex, setOpenModalIndex] = useState(null);
 
     const getQuestionToShow = () => {
         if (currentQuestion === 1 && !showingFollowUp) {
@@ -34,7 +34,7 @@ const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, 
         const answers = renderedQuestion.answer;
         const answerElements = []; // store in array to render answer options
 
-        for (let i = 0; i < answers.length; i++) {            
+        for (let i = 0; i < answers.length; i++) {  
             answerElements.push(
                 <div key={i} className="radio-container">
                     <div>
@@ -49,8 +49,10 @@ const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, 
                         />
                         <label htmlFor={`id-${renderedQuestion}-answer-${i}`}>
                             {answers[i].answerText}
-                        </label> <strong>i</strong> 
-                        {/* TODO: link the "i" to modal */}
+                        </label> <strong
+                            onClick={() => setOpenModalIndex(i)}
+                            className="cursor-pointer modal-open"
+                            >i</strong>
                     </div>
                 </div>
             );
@@ -62,6 +64,25 @@ const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, 
 
     const getCurrentQuestion = () => {
         const renderedQuestion = getQuestionToShow();
+        const answers = renderedQuestion.answer;
+        
+        const renderModal = () => {
+            if (openModalIndex !== null) {
+                return (
+                    <div className="modal-container">
+                        <div className="modal-content">
+                            <h2 className="modal-title">{answers[openModalIndex].answerText}</h2>
+                            <h2 
+                                onClick={() => setOpenModalIndex(null)}
+                                className="cursor-pointer modal-close">
+                                X
+                            </h2>
+                            <p>{answers[openModalIndex].modalContent}</p>
+                        </div>
+                    </div>
+                )
+            }
+        }
 
         return (
             <div className="container">
@@ -71,6 +92,8 @@ const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, 
                     <p className={errorMessage ? "error-message" : "display-none"}>{errorMessage}</p>
                     {getCurrentAnswers()}
                 </fieldset>
+                
+                {renderModal()}
             </div>
         );
     };
@@ -97,8 +120,7 @@ const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, 
             return (
                 <Link 
                 to="/results" className="button-standard gray"
-                onClick={validateForm}
-                >
+                onClick={validateForm}>
                     Show results
                 </Link>
             )
@@ -107,8 +129,7 @@ const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, 
                 <button 
                     type="submit" 
                     className="button-standard yellow" 
-                    onClick={validateForm}
-                >
+                    onClick={validateForm}>
                     Next question    
                 </button>
             )
@@ -122,7 +143,11 @@ const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, 
             {getCurrentQuestion()}
 
             <div className="button-container">
-                <Link to="/leave-confirmation" className="button-standard red centered">Start over</Link>
+                <Link 
+                    to="/leave-confirmation" 
+                    className="button-standard red centered">
+                    Start over
+                </Link>
                 {getButton()}
             </div>
         </>
