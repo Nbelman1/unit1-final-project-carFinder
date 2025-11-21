@@ -1,4 +1,5 @@
-import formSubmittedHero from "../assets/images/hero-images/ford-mustang-interior.jpg";
+import { Link } from "react-router";
+import formSubmittedHero from "/images/hero-images/ford-mustang-interior.jpg";
 
 const FormSubmitted = () => {
     return (
@@ -11,7 +12,7 @@ const FormSubmitted = () => {
             <p>Thank you for your feedback; we hope you enjoy your time on our site.</p>
 
             <div className="button-centered">
-                <button type="button" className="button-standard yellow">Go Home</button>
+                <Link to="/" className="button-standard yellow">Go Home</Link>
             </div>
             
         </div>

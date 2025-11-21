@@ -1,21 +1,44 @@
-const Header = () => {
-  return (
+import { Link } from 'react-router';
+
+const Header = ({ setUserAnswers, setUserResponse, setCurrentQuestion }) => {
+
+	const resetQuiz = () => {
+		setUserAnswers([]);
+		setUserResponse("");
+		setCurrentQuestion(0);
+	}
+
+	return (
+
     <div>
         <header>
             <div className="nav-container">
-				{/* TODO: logo goes here, link it to home page */}
-				<h1 className="logo">CarFinder</h1>
+				
+				<h1 className="logo">
+					<Link 
+						onClick={resetQuiz}
+						to="/"
+					>
+						CarFinder
+					</Link>
+				</h1>
 
                 <nav className="nav-container">
 					<ul className="nav-links">
 						<li className="nav-links">
-							Discover Your Car
+							{/* TODO: fix bug. button does not reset state of follow up questions. pass setShowingFollowUp prop, reset to false */}
+							<Link
+								onClick={resetQuiz}
+								to="/quiz"
+							>
+								Start Quiz
+							</Link>
 						</li>
 						<li className="nav-links">
-							View All Cars
+							<Link to="/complete-list">View All Cars</Link>
 						</li>
 						<li className="nav-links">
-							Contact Us
+							<Link to="/contact-us">Contact Us</Link>
 						</li>
 					</ul>
 				</nav>

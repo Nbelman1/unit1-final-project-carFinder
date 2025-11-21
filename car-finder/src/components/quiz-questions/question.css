@@ -7,6 +7,45 @@
     margin-left: 20px;
 }
 
+.modal-open {
+    font-size: 24px;
+    text-shadow: 1px 2px 2px #FAA916;
+}
+
+.modal-title {
+    text-shadow: 2px 2px 2px #96031a;
+    font-family: "Sriracha", cursive;
+}
+
+.modal-container {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #1B1B1E;
+    color:#FBFFFE;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    opacity: 0.9;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    margin: 0;
+}
+
 input {
     width: auto;
     margin-right: 10px;
