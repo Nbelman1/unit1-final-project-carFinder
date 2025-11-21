@@ -15,7 +15,7 @@ export const mainQuestions =
             },
             {
                 answerText: "Off-road adventures",
-                modalContent: "When you hear the call of the wild, you'll have a four-wheel drive machine to answerText"
+                modalContent: "When you hear the call of the wild, you'll have a four-wheel drive machine to answer it"
             },
             {
                 answerText: "Pure driving enjoyment",
@@ -69,7 +69,7 @@ export const mainQuestions =
             },
             {
                 answerText: "van",
-                modalContent: "Physically, a box is the most efficient shape to package things in. Smooth out the box and you have yourself a van. Minivans are popular with families for their unique sliding doors, which ensure easy acccess to passengers without having to worry about denting other metal in the parking lot. Vans built as work trucks feature body-on-frame construction, enabling large payload capacities along with mobile, secure storage for businesses and tradesman"
+                modalContent: "Physically, a box is the most efficient shape to package things in. Smooth out the box and you have yourself a van. Minivans are popular with families for their unique sliding doors, which ensure easy acccess to passengers without having to worry about denting other metal in the parking lot. Vans built as work trucks feature body-on-frame construction, enabling large payload capacities along with mobile, secure storage for businesses and tradesmen"
             },
         ]
     },
