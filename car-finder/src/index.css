@@ -137,6 +137,10 @@ a {
     cursor: pointer;
 }
 
+.button-standard:hover {
+    text-shadow: 2px 4px 4px #9d939f;
+}
+
 .red {
     background-color: #96031a;
     color: #FBFFFE;

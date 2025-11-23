@@ -11,6 +11,13 @@
     color: #9d939f;
     margin-left: 5vw;
     text-shadow: 2px 4px 4px #1B1B1E;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    text-shadow: 2px 4px 4px #FAA916;
 }
 
 .nav-container {
@@ -28,6 +35,10 @@
     margin-right: 5vw;
     text-shadow: 2px 4px 4px #1B1B1E;
     font-size: 28px;
+}
+
+.nav-links:hover {
+    text-shadow: 2px 4px 4px #FAA916;
 }
 
 /* overriding default styling of links */
@@ -53,7 +64,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
 }
 
 /* overriding styling of links */
@@ -62,6 +72,10 @@
     text-decoration: none;
     font-family: "Sriracha", cursive; 
     font-size: 20px; 
+}
+
+.footer-container a:hover {
+    text-shadow: 2px 4px 4px #FAA916;
 }
 
 footer {
