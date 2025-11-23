@@ -1,11 +1,12 @@
 import { Link } from 'react-router';
 
-const Header = ({ setUserAnswers, setUserResponse, setCurrentQuestion }) => {
+const Header = ({ setUserAnswers, setUserResponse, setCurrentQuestion, setShowingFollowUp }) => {
 
 	const resetQuiz = () => {
 		setUserAnswers([]);
 		setUserResponse("");
 		setCurrentQuestion(0);
+		setShowingFollowUp(false);
 	}
 
 	return (
@@ -26,7 +27,6 @@ const Header = ({ setUserAnswers, setUserResponse, setCurrentQuestion }) => {
                 <nav className="nav-container">
 					<ul className="nav-links">
 						<li className="nav-links">
-							{/* TODO: fix bug. button does not reset state of follow up questions. pass setShowingFollowUp prop, reset to false */}
 							<Link
 								onClick={resetQuiz}
 								to="/quiz"
