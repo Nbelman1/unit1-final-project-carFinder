@@ -18,6 +18,7 @@ function App() {
 	const [userAnswers, setUserAnswers] = useState([]);
 	const [userResponse, setUserResponse] = useState("");
 	const [currentQuestion, setCurrentQuestion] = useState(0);
+	const [showingFollowUp, setShowingFollowUp] = useState(false);
 
 	return (
 		
@@ -25,7 +26,9 @@ function App() {
 			<Header 
 				setUserAnswers={setUserAnswers} 
 				setUserResponse={setUserResponse} 
-				setCurrentQuestion={setCurrentQuestion} />
+				setCurrentQuestion={setCurrentQuestion}
+				setShowingFollowUp={setShowingFollowUp} 
+			/>
 			<div className="main-container flex-grow">	
 				<Routes>
 					<Route path="/" element={<Home />} />
@@ -34,17 +37,21 @@ function App() {
 					<Route path="/contact-us" element={<ContactUs />} />
 					<Route path="/form-submitted" element={<FormSubmitted />} />
 					<Route path="/leave-confirmation" element={<LeaveConfirmation 
-						currentQuestion={currentQuestion}
-					/>} />
+						currentQuestion={currentQuestion}/>} 
+					/>
 					<Route path="/quiz" element={<Question 
 						userAnswers={userAnswers} 
 						setUserAnswers={setUserAnswers} 
 						userResponse={userResponse} 
 						setUserResponse={setUserResponse} 
 						currentQuestion={currentQuestion} 
-						setCurrentQuestion={setCurrentQuestion} />} />
+						setCurrentQuestion={setCurrentQuestion} 
+						showingFollowUp={showingFollowUp} 
+						setShowingFollowUp={setShowingFollowUp} />} 
+					/>
 					<Route path="/results" element={<Results 
-						userAnswers={userAnswers}/>} />
+						userAnswers={userAnswers}/>} 
+					/>
 				</Routes>
 			</div>
 			<Footer />
