@@ -6,15 +6,18 @@
 /* black: #1B1B1E */
 /* yellow: #FAA916 */
 
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     background-color: #FBFFFE;
     margin: 0;
     padding: 0;
     font-family: "Lexend", sans-serif;
     color: #1B1B1E;
-    min-height: 100vh;  
-    display: flex;
-    flex-direction: column;
 }
 
 /* expands elements so footer stays on bottom */
