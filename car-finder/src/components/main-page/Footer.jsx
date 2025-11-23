@@ -1,9 +1,7 @@
-// TODO: push footer to bottom
-
 const Footer = () => {
     return (
-        <footer className="footer-container">
-            <p>Copyright &copy; <a href="https://github.com/Nbelman1" target="_blank">Noah Belman</a></p>
+        <footer>
+            <p className="footer-container">Copyright &copy; <a href="https://github.com/Nbelman1" target="_blank">&nbsp;Noah Belman</a></p>
         </footer>
     );
 };

@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import leaveConfirmHero from "/images/hero-images/driving-on-highway.jpg";
 
-const LeaveConfirmation = ({ setUserAnswers, setUserResponse, setCurrentQuestion }) => {
+const LeaveConfirmation = ({ setUserAnswers, setUserResponse, setCurrentQuestion, currentQuestion }) => {
 
     const resetQuiz = () => {
 		setUserAnswers([]);
@@ -13,7 +13,7 @@ const LeaveConfirmation = ({ setUserAnswers, setUserResponse, setCurrentQuestion
         <div className="container">
             
             <div className="centered">
-                <img src={leaveConfirmHero} alt="driving on highway, steering wheel"/>
+                <img src={leaveConfirmHero} alt="driving on highway, steering wheel" className="small-img"/>
             </div>
             
             <h1>Are you sure?</h1>
@@ -23,12 +23,15 @@ const LeaveConfirmation = ({ setUserAnswers, setUserResponse, setCurrentQuestion
                 <Link 
                     onClick={resetQuiz}
                     to="/quiz" 
-                    className="button-standard red"
-                >
-                    Start over
+                    className="button-standard red">
+                        Start over
                 </Link>
-                {/* TODO: fix bug. button does not reset state of follow up questions. pass setShowingFollowUp prop, reset to false */}
-                <button type="button" className="button-standard yellow">Continue quiz</button>
+                <Link 
+                    to="/quiz" 
+                    state={{currentQuestion : currentQuestion}}
+                    className="button-standard yellow">
+                        Continue quiz
+                </Link>
             </div>
         </div>
     );
