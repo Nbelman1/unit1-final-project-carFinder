@@ -12,13 +12,18 @@
     background-color: #9d939f;
     margin: 30px 25px 30px 25px;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 12px;
 }
 
 .details-container {
     display: flex;
     flex-direction: column;
     margin: 20px 15px 20px 15px;
+}
+
+.error-message-results {
+    color: #96031a;
+    font-size: 24;
 }
 
 img {
