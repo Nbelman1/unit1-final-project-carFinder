@@ -1,18 +1,20 @@
 import { Link } from "react-router";
+import homeHero from "/images/hero-images/keys-to-car.jpg";
 
 const Home = () => {
     return (
         <div className="container">
             <h1>Welcome to CarFinder</h1>
-            <br />
             <h2>About Us</h2>
-            <br />
             <p>
                 Today's automotive landscape can sure be confusing, with most manufacturers changing their lineup every single year. It can require a full-time job to keep track of modern features, trim levels, and vehicle types.
             </p>
             <p>
                 Welcome to CarFinder, where we do the market research so you can find the vehicle that fits your needs, all from the comfort of your couch, your work desk, or even your current ride.
             </p>
+            <div className="centered">
+                <img src={homeHero} alt="keys to a sport car" />
+            </div>
             <div>
                 <p>CarFinder is a free app that helps you: </p> 
                 <ul>
