@@ -27,21 +27,16 @@ const Results = () => {
 
     const filterResults = () => {
         const passengersAsANumber = parsePassengers(finalAnswers[2]);
-        console.log("final answers", finalAnswers);
         const resultsI1 = carData.filter(car => car.tags.includes(finalAnswers[1])); // filter car objects that match user's preferred tag
-        console.log("resultsI1", resultsI1);
         const resultsI2 = resultsI1.filter(car => car.maxPassengers >= passengersAsANumber); // filter car objects that match user's preferred number of passengers
-        console.log("resultsI2", resultsI2);
         const resultsI3 = resultsI2.filter(car => car.vehicleShape.includes(finalAnswers[3])); // filter car objects that match user's preferred vehicle type 
-        console.log("resultsI3", resultsI3);
         const resultsI4 = resultsI3.filter(car => car.powertrain.includes(finalAnswers[4]));
         // filter car objects that match user's preferred powertrain type
-        console.log("resultsI4", resultsI4);
         return resultsI4.map((car) => car.id);
     };
 
     const resultsIds = filterResults(finalAnswers);
-    console.log("resultsIds", resultsIds);
+
 
     // run only after component mounts and renders
     useEffect(() => {
