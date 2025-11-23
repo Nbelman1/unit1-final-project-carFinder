@@ -1,18 +1,17 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 import './index.css';
 import "./components/main-page/main.css";
 import Header from './components/main-page/Header';
-import Footer from './components/main-page/Footer';
 import Home from './components/main-page/Home';
-import Question from './components/quiz-questions/Question';
-import ContactUs from './components/ContactUs';
+import CompleteList from './components/render-vehicles/CompleteList';
 import { carData } from './components/render-vehicles/carData';
+import ContactUs from './components/ContactUs';
 import FormSubmitted from './components/FormSubmitted';
 import LeaveConfirmation from './components/quiz-questions/LeaveConfirmation';
-import CompleteList from './components/render-vehicles/CompleteList';
+import Question from './components/quiz-questions/Question';
 import Results from './components/render-vehicles/Results';
-import { useState } from 'react';
-
+import Footer from './components/main-page/Footer';
 
 function App() {
 
@@ -33,7 +32,9 @@ function App() {
 					carData={carData}/>} />
 				<Route path="/contact-us" element={<ContactUs />} />
 				<Route path="/form-submitted" element={<FormSubmitted />} />
-				<Route path="/leave-confirmation" element={<LeaveConfirmation />} />
+				<Route path="/leave-confirmation" element={<LeaveConfirmation 
+					currentQuestion={currentQuestion}
+				/>} />
 				<Route path="/quiz" element={<Question 
 					userAnswers={userAnswers} 
 					setUserAnswers={setUserAnswers} 
