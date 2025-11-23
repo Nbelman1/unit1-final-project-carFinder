@@ -1,5 +1,4 @@
 import VehicleCard from "./VehicleCard";
-import { carData } from "./CarData";
 import { Link } from "react-router";
 
 const CompleteList = ({ carData }) => {
