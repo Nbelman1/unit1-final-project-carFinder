@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import './question.css';
-import { Link } from 'react-router';
-import { followUpQuestions, mainQuestions } from './QuestionSet';
+import { Link, useNavigate } from 'react-router';
+import { followUpQuestions, mainQuestions } from './questionSet.js';
 
-const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, currentQuestion, setCurrentQuestion }) => {
+const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, currentQuestion, setCurrentQuestion, showingFollowUp, setShowingFollowUp }) => {
 
     const [errorMessage, setErrorMessage] = useState("");
-    const [showingFollowUp, setShowingFollowUp] = useState(false);
     const [openModalIndex, setOpenModalIndex] = useState(null);
+    const navigateTo = useNavigate();
 
     const getQuestionToShow = () => {
         if (currentQuestion === 1 && !showingFollowUp) {
@@ -65,7 +65,11 @@ const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, 
     const getCurrentQuestion = () => {
         const renderedQuestion = getQuestionToShow();
         const answers = renderedQuestion.answer;
-        
+
+        if (currentQuestion >= mainQuestions.length) {
+            return null;
+        }
+
         const renderModal = () => {
             if (openModalIndex !== null) {
                 return (
@@ -98,36 +102,50 @@ const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, 
         );
     };
 
-    const validateForm = () => {
-        if (userResponse) {
-            setUserAnswers([...userAnswers, userResponse]);
-            setErrorMessage("");
-            setUserResponse("");
-            // after answering follow-up, return to main questions
-            if (currentQuestion === 1 && !showingFollowUp) {
-                setShowingFollowUp(true);
-            } else {
-                setShowingFollowUp(false);
-                setCurrentQuestion(currentQuestion + 1);
-            }
-        } else {
+    const validateForm = (event) => {
+        const onLastQuestion = (currentQuestion === mainQuestions.length -1);
+
+        // early return to stop currentQuestion from becoming 4
+        if (!userResponse) {
+            event.preventDefault();
             setErrorMessage("Please select a response.");
+            return;
+        }
+
+        // add selected answer to userAnswers array, reset error message and user response
+        setUserAnswers([...userAnswers, userResponse]);
+        setErrorMessage("");
+        setUserResponse("");
+
+        if (onLastQuestion) {
+            navigateTo("/results", { state: { finalAnswers: [...userAnswers, userResponse] } });
+            return;
+        }
+
+        // after answering a follow-up question, return to main questions
+        if (currentQuestion === 1 && !showingFollowUp) {
+            setShowingFollowUp(true);
+        } else {
+            setShowingFollowUp(false);
+            setCurrentQuestion(currentQuestion + 1);
         }
     };
 
+    // logic to render either "show results" or "next question" button
     const getButton = () => {
         if (currentQuestion === mainQuestions.length - 1) {
             return (
-                <Link 
-                to="/results" className="button-standard gray"
+                <button
+                type="button" 
+                className="button-standard gray"
                 onClick={validateForm}>
                     Show results
-                </Link>
+                </button>
             )
         } else {
             return (
                 <button 
-                    type="submit" 
+                    type="button" 
                     className="button-standard yellow" 
                     onClick={validateForm}>
                     Next question    
@@ -136,15 +154,13 @@ const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, 
         }
     };
 
-
-
     return (
         <>
             {getCurrentQuestion()}
-
             <div className="button-container">
                 <Link 
                     to="/leave-confirmation" 
+                    state={{currentQuestion : currentQuestion}}
                     className="button-standard red centered">
                     Start over
                 </Link>
