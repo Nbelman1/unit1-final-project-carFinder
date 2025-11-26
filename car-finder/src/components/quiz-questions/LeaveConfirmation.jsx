@@ -1,12 +1,13 @@
 import { Link } from "react-router";
 import leaveConfirmHero from "/images/hero-images/driving-on-highway.jpg";
 
-const LeaveConfirmation = ({ setUserAnswers, setUserResponse, setCurrentQuestion, currentQuestion }) => {
+const LeaveConfirmation = ({ setUserAnswers, setUserResponse, setCurrentQuestion, currentQuestion, setShowingFollowUp }) => {
 
     const resetQuiz = () => {
 		setUserAnswers([]);
 		setUserResponse("");
 		setCurrentQuestion(0);
+        setShowingFollowUp(false);
 	}
 
     return (
