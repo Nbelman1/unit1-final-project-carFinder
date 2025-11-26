@@ -91,7 +91,15 @@ footer {
 /* typical mobile width (portrait) */
 @media (max-width: 767px) {
     .nav-links {
-        font-size: 18px;
+        font-size: 14px;
         margin-right: 2vw;
+    }
+
+    .logo {
+        font-size: 36px;
+    }
+
+    p {
+        margin-top: 45px;
     }
 }
