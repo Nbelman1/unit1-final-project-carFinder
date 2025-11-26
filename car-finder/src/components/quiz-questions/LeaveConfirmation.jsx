@@ -11,7 +11,7 @@ const LeaveConfirmation = ({ setUserAnswers, setUserResponse, setCurrentQuestion
 		setCurrentQuestion(0);
         setShowingFollowUp(false);
         navigateTo("/quiz");
-	}
+	};
 
     return (
         <div className="container">
@@ -26,7 +26,8 @@ const LeaveConfirmation = ({ setUserAnswers, setUserResponse, setCurrentQuestion
             <div className="button-container">
                 <button 
                     onClick={resetQuiz}
-                    className="button-standard red">
+                    className="button-standard red"
+                    style={{ zIndex: 1000 }}>
                         Start over
                 </button>
                 <Link 
