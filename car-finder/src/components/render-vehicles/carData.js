@@ -8,7 +8,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "SUV",
         powertrain:  ["ICE", "HEV"],
-        imageSource: "/images/vehicles/suv-2row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-2row.jpg",
         tags: ["Family hauling", "Commuting to work / school", "Running errands", "Traversing trailheads"]
     },
     {
@@ -19,7 +19,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "SUV",
         powertrain:  ["ICE"],
-        imageSource: "/images/vehicles/suv-2row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-2row.jpg",
         tags: ["Commuting to work / school", "Running errands", "Traversing trailheads"]
     },
     {
@@ -30,7 +30,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "SUV",
         powertrain:  ["ICE", "HEV", "PHEV"],
-        imageSource: "/images/vehicles/suv-2row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-2row.jpg",
         tags: ["Family hauling", "Commuting to work / school", "Running errands", "Ride sharing", "Traversing trailheads"]
     },
     {
@@ -41,7 +41,7 @@ export const carData = [
         maxPassengers: 8,
         vehicleShape: "SUV",
         powertrain:  ["ICE"],
-        imageSource: "/images/vehicles/suv-3row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-3row.jpg",
         tags: ["Family hauling", "Running errands", "Ride sharing"]
     },
     {
@@ -52,7 +52,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "SUV",
         powertrain:  ["ICE"],
-        imageSource: "/images/vehicles/suv-2row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-2row.jpg",
         tags: ["Ripping through desert dunes", "Wheeling over boulder fields", "Traversing trailheads"]
     },
     {
@@ -63,7 +63,7 @@ export const carData = [
         maxPassengers: 8,
         vehicleShape: "SUV",
         powertrain: ["ICE", "HEV"],
-        imageSource: "/images/vehicles/suv-3row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-3row.jpg",
         tags: ["Family hauling", "Running errands", "Ride sharing"]
     },
     {
@@ -74,7 +74,7 @@ export const carData = [
         maxPassengers: 7,
         vehicleShape: "SUV",
         powertrain: ["ICE", "PHEV"],
-        imageSource: "/images/vehicles/suv-3row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-3row.jpg",
         tags: ["Family hauling", "Running errands", "Ride sharing", "Traversing trailheads"]
     },
     {
@@ -85,7 +85,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "SUV",
         powertrain: ["ICE", "PHEV"],
-        imageSource: "/images/vehicles/suv-2row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-2row.jpg",
         tags: ["Ripping through desert dunes", "Wheeling over boulder fields", "Traversing trailheads"]
     },
     {
@@ -96,7 +96,7 @@ export const carData = [
         maxPassengers: 7,
         vehicleShape: "SUV",
         powertrain: ["ICE", "HEV"],
-        imageSource: "/images/vehicles/suv-2row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-2row.jpg",
         tags: ["Family hauling", "Running errands", "Wheeling over boulder fields", "Traversing trailheads"]
     },
     {
@@ -107,7 +107,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "SUV",
         powertrain: ["ICE", "HEV"],
-        imageSource: "/images/vehicles/suv-2row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-2row.jpg",
         tags: ["Commuting to work / school", "Running errands", "Ride sharing", "Traversing trailheads"]
     },
     {
@@ -118,7 +118,7 @@ export const carData = [
         maxPassengers: 8,
         vehicleShape: "SUV",
         powertrain: ["ICE"],
-        imageSource: "/images/vehicles/suv-3row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-3row.jpg",
         tags: ["Family hauling", "Towing and hauling", "Transporting goods or equipment", "Ride sharing"]
     },
     {
@@ -129,7 +129,7 @@ export const carData = [
         maxPassengers: 7,
         vehicleShape: "SUV",
         powertrain: ["ICE"],
-        imageSource: "/images/vehicles/suv-3row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-3row.jpg",
         tags: ["Family hauling", "Towing and hauling", "Ride sharing", "Traversing trailheads"]
     },
     {
@@ -140,7 +140,7 @@ export const carData = [
         maxPassengers: 8,
         vehicleShape: "SUV",
         powertrain: ["ICE"],
-        imageSource: "/images/vehicles/suv-3row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-3row.jpg",
         tags: ["Family hauling", "Towing and hauling", "Transporting goods or equipment", "Ride sharing", "Traversing trailheads"]
     },
     {
@@ -151,7 +151,7 @@ export const carData = [
         maxPassengers: 7,
         vehicleShape: "SUV",
         powertrain: ["HEV"],
-        imageSource: "/images/vehicles/suv-3row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-3row.jpg",
         tags: ["Family hauling", "Towing and hauling", "Transporting goods or equipment", "Ride sharing", "Traversing trailheads"]
     },
     {
@@ -162,7 +162,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "SUV",
         powertrain: ["ICE"],
-        imageSource: "/images/vehicles/suv-2row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-2row.jpg",
         tags: ["Commuting to work / school", "Running errands"]
     },
     {
@@ -173,7 +173,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "SUV",
         powertrain: ["BEV"],
-        imageSource: "/images/vehicles/suv-2row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-2row.jpg",
         tags: ["Commuting to work / school", "Running errands", "Ride sharing"]
     },
     {
@@ -184,7 +184,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "SUV",
         powertrain: ["BEV"],
-        imageSource: "/images/vehicles/suv-2row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-2row.jpg",
         tags: ["Commuting to work / school", "Running errands", "Ride sharing"]
     },
     {
@@ -195,7 +195,7 @@ export const carData = [
         maxPassengers: 7,
         vehicleShape: "SUV",
         powertrain: ["BEV"],
-        imageSource: "/images/vehicles/suv-3row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-3row.jpg",
         tags: ["Family hauling", "Commuting to work / school", "Running errands", "Traversing trailheads", "Ripping through desert dunes", "Straight-line performance"]
     },
     {
@@ -206,7 +206,7 @@ export const carData = [
         maxPassengers: 6,
         vehicleShape: "SUV",
         powertrain: ["BEV"],
-        imageSource: "/images/vehicles/suv-3row.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/suv-3row.jpg",
         tags: ["Family hauling", "Commuting to work / school", "Running errands", "Ride sharing"]
     },
     {
@@ -217,7 +217,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "car",
         powertrain: ["ICE"],
-        imageSource: "/images/vehicles/car-4door.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-4door.jpg",
         tags: ["Commuting to work / school", "Running errands", "Ride sharing"]
     },
     {
@@ -228,7 +228,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "car",
         powertrain: ["ICE", "HEV"],
-        imageSource: "/images/vehicles/car-4door.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-4door.jpg",
         tags: ["Commuting to work / school", "Running errands", "Ride sharing"]
     },
     {
@@ -239,7 +239,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "car",
         powertrain: ["HEV", "PHEV"], 
-        imageSource: "/images/vehicles/car-4door.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-4door.jpg",
         tags: ["Commuting to work / school", "Running errands", "Ride sharing"]
     },
     {
@@ -250,7 +250,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "car",
         powertrain: ["ICE", "HEV"],
-        imageSource: "/images/vehicles/car-4door.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-4door.jpg",
         tags: ["Commuting to work / school", "Running errands", "Ride sharing"]
     },
     {
@@ -261,7 +261,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "car",
         powertrain: ["HEV"], 
-        imageSource: "/images/vehicles/car-4door.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-4door.jpg",
         tags: ["Commuting to work / school", "Running errands", "Ride sharing"]
     },
     {
@@ -272,7 +272,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "car",
         powertrain: ["ICE", "HEV"],
-        imageSource: "/images/vehicles/car-4door.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-4door.jpg",
         tags: ["Commuting to work / school", "Running errands", "Ride sharing"]
     },
     {
@@ -283,7 +283,7 @@ export const carData = [
         maxPassengers: 2,  
         vehicleShape: "coupe", 
         powertrain: ["ICE"],
-        imageSource: "/images/vehicles/car-coupe.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-coupe.jpg",
         tags: ["Time attack at the track", "Weekend thrill rides", "Straight-line performance"]
     },
     {
@@ -294,7 +294,7 @@ export const carData = [
         maxPassengers: 4,
         vehicleShape: "coupe",
         powertrain: ["ICE"],
-        imageSource: "/images/vehicles/car-coupe.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-coupe.jpg",
         tags: ["Weekend thrill rides", "Running errands", "Commuting to work / school"]
     },
     {
@@ -305,7 +305,7 @@ export const carData = [
         maxPassengers: 4,
         vehicleShape: "coupe",
         powertrain: ["ICE"],
-        imageSource: "/images/vehicles/car-coupe.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-coupe.jpg",
         tags: ["Time attack at the track", "Weekend thrill rides", "Straight-line performance"]
     },
     {
@@ -316,7 +316,7 @@ export const carData = [
         maxPassengers: 2,
         vehicleShape: "coupe",
         powertrain: ["ICE"],
-        imageSource: "/images/vehicles/car-coupe.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-coupe.jpg",
         tags: ["Time attack at the track", "Weekend thrill rides", "Straight-line performance"]
     },
     {
@@ -327,7 +327,7 @@ export const carData = [
         maxPassengers: 4,
         vehicleShape: "coupe",
         powertrain: ["ICE"], // mild hybrid
-        imageSource: "/images/vehicles/car-coupe.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-coupe.jpg",
         tags: ["Weekend thrill rides", "Straight-line performance"]
     },
     {
@@ -338,7 +338,7 @@ export const carData = [
         maxPassengers: 4,
         vehicleShape: "coupe",
         powertrain: ["ICE", "HEV"],
-        imageSource: "/images/vehicles/car-coupe.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-coupe.jpg",
         tags: ["Time attack at the track", "Weekend thrill rides", "Straight-line performance"]
     },
     {
@@ -349,7 +349,7 @@ export const carData = [
         maxPassengers: 4,
         vehicleShape: "coupe", 
         powertrain: ["ICE"],
-        imageSource: "/images/vehicles/car-coupe.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-coupe.jpg",
         tags: ["Weekend thrill rides", "Running errands"]
     },
     {
@@ -360,7 +360,7 @@ export const carData = [
         maxPassengers: 4,
         vehicleShape: "coupe", 
         powertrain: ["ICE"],
-        imageSource: "/images/vehicles/car-coupe.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-coupe.jpg",
         tags: ["Weekend thrill rides", "Straight-line performance"]
     },
     {
@@ -371,7 +371,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "wagon",
         powertrain: ["ICE"], // mild hybrid
-        imageSource: "/images/vehicles/car-wagon.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-wagon.jpg",
         tags: ["Family hauling", "Commuting to work / school", "Running errands", "Traversing trailheads"]
     },
     {
@@ -382,7 +382,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "wagon",  
         powertrain: ["ICE"],
-        imageSource: "/images/vehicles/car-wagon.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-wagon.jpg",
         tags: ["Family hauling", "Commuting to work / school", "Running errands", "Traversing trailheads"]
     },
     {
@@ -393,7 +393,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "wagon",  
         powertrain: ["ICE"],
-        imageSource: "/images/vehicles/car-wagon.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-wagon.jpg",
         tags: ["Family hauling", "Commuting to work / school", "Running errands", "Traversing trailheads"]
     },
     {
@@ -404,7 +404,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "wagon",  
         powertrain: ["ICE"], // mild hybrid
-        imageSource: "/images/vehicles/car-wagon.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-wagon.jpg",
         tags: ["Family hauling", "Commuting to work / school", "Running errands", "Traversing trailheads"]
     },
     {
@@ -415,7 +415,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "wagon",  
         powertrain: ["ICE"], // mild hybrid
-        imageSource: "/images/vehicles/car-wagon.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/car-wagon.jpg",
         tags: ["Family hauling", "Time attack at the track", "Weekend thrill rides", "Straight-line performance"]
     },
     {
@@ -426,7 +426,7 @@ export const carData = [
         maxPassengers: 15,
         vehicleShape: "van",
         powertrain: ["ICE"],
-        imageSource: "/images/vehicles/van-worktruck.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/van-worktruck.jpg",
         tags: ["Towing and hauling", "Transporting goods or equipment"]
     },
     {
@@ -437,7 +437,7 @@ export const carData = [
         maxPassengers: 15,
         vehicleShape: "van",
         powertrain: ["ICE"],
-        imageSource: "/images/vehicles/van-worktruck.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/van-worktruck.jpg",
         tags: ["Towing and hauling", "Transporting goods or equipment"]
     },
     {
@@ -448,7 +448,7 @@ export const carData = [
         maxPassengers: 2,
         vehicleShape: "van",
         powertrain: ["BEV"],
-        imageSource: "/images/vehicles/van-worktruck.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/van-worktruck.jpg",
         tags: ["Transporting goods or equipment"]
     },
     {
@@ -459,7 +459,7 @@ export const carData = [
         maxPassengers: 3,
         vehicleShape: "van",
         powertrain: ["BEV"],
-        imageSource: "/images/vehicles/van-worktruck.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/van-worktruck.jpg",
         tags: ["Transporting goods or equipment"]
     },
     {
@@ -470,7 +470,7 @@ export const carData = [
         maxPassengers: 8,
         vehicleShape: "van",
         powertrain: ["HEV"],
-        imageSource: "/images/vehicles/van-minivan.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/van-minivan.jpg",
         tags: ["Family hauling", "Running errands", "Ride sharing"]
     },
     {
@@ -481,7 +481,7 @@ export const carData = [
         maxPassengers: 7, 
         vehicleShape: "van",
         powertrain: ["ICE","PHEV"],
-        imageSource: "/images/vehicles/van-minivan.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/van-minivan.jpg",
         tags: ["Family hauling", "Running errands", "Ride sharing"]
     },
     {
@@ -492,7 +492,7 @@ export const carData = [
         maxPassengers: 8, 
         vehicleShape: "van",
         powertrain: ["ICE", "HEV"], 
-        imageSource: "/images/vehicles/van-minivan.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/van-minivan.jpg",
         tags: ["Family hauling", "Running errands", "Ride sharing"]
     },
     {
@@ -503,7 +503,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "truck",
         powertrain: ["ICE"],
-        imageSource: "/images/vehicles/truck-pickup-fullsize.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/truck-pickup-fullsize.jpg",
         tags: ["Towing and hauling", "Transporting goods or equipment", "Ripping through desert dunes", "Wheeling over boulder fields", "Traversing trailheads", "Straight-line performance"]
     },
     {
@@ -514,7 +514,7 @@ export const carData = [
         maxPassengers: 6,
         vehicleShape: "truck",
         powertrain: ["ICE"],
-        imageSource: "/images/vehicles/truck-pickup-fullsize.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/truck-pickup-fullsize.jpg",
         tags: ["Towing and hauling", "Transporting goods or equipment", "Wheeling over boulder fields", "Traversing trailheads"]
     },
     {
@@ -525,7 +525,7 @@ export const carData = [
         maxPassengers: 5, 
         vehicleShape: "truck",
         powertrain: ["ICE", "HEV"], 
-        imageSource: "/images/vehicles/truck-pickup-midsize.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/truck-pickup-midsize.jpg",
         tags: ["Commuting to work / school", "Running errands", "Towing and hauling", "Transporting goods or equipment", "Traversing trailheads"]
     },
     {
@@ -536,7 +536,7 @@ export const carData = [
         maxPassengers: 5, 
         vehicleShape: "truck",
         powertrain: ["ICE"],
-        imageSource: "/images/vehicles/truck-pickup-midsize.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/truck-pickup-midsize.jpg",
         tags: ["Towing and hauling", "Transporting goods or equipment", "Traversing trailheads"]
     },
     {
@@ -547,7 +547,7 @@ export const carData = [
         maxPassengers: 5, 
         vehicleShape: "truck",
         powertrain: ["ICE","HEV"],
-        imageSource: "/images/vehicles/truck-pickup-midsize.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/truck-pickup-midsize.jpg",
         tags: ["Towing and hauling", "Transporting goods or equipment", "Ripping through desert dunes", "Wheeling over boulder fields", "Traversing trailheads"]
     },
     {
@@ -558,7 +558,7 @@ export const carData = [
         maxPassengers: 5,
         vehicleShape: "truck",
         powertrain: ["BEV"],
-        imageSource: "/images/vehicles/truck-pickup-midsize.jpg",
+        imageSource: "/unit1-final-project-carFinder/images/vehicles/truck-pickup-midsize.jpg",
         tags: ["Transporting goods or equipment", "Wheeling over boulder fields", "Traversing trailheads", "Straight-line performance"]
     }
 ];
