@@ -1,0 +1,22 @@
+name: Deploy project subfolder to Github Pages
+
+on: 
+  push: 
+    branches: 
+      - deploy-branch
+
+jobs: 
+  build-and-deploy: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with: 
+        path: './car-finder/dist'
+
+      - name: Deploy to GitHub pages
+        id: deployment
+        uses: actions/deploy-pages@v4
