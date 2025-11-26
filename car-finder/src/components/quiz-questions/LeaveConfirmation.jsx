@@ -26,7 +26,6 @@ const LeaveConfirmation = ({ setUserAnswers, setUserResponse, setCurrentQuestion
             <div className="button-container">
                 <button 
                     onClick={resetQuiz}
-                    to="/quiz" 
                     className="button-standard red">
                         Start over
                 </button>
