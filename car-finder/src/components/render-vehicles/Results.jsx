@@ -47,12 +47,6 @@ const Results = () => {
         }
     }, [resultsIds]); // only re-run if resultsIds changes 
 
-    const resetQuiz = () => {
-            setUserAnswers([]);
-            setUserResponse("");
-            setCurrentQuestion(0);
-    }
-
     return (
         <>
             <h2 className="centered">Congrats on completing the quiz! Here are your potential next vehicles: </h2>
@@ -60,10 +54,9 @@ const Results = () => {
             <p className={errorMessage ? "error-message-results container" : "display-none"}>{errorMessage}</p>
             <div className="button-container">
                 <Link 
-                    onClick={resetQuiz}
-                    to="/quiz" 
+                    to="/" 
                     className="button-standard yellow">
-                        Restart quiz
+                        Go home
                 </Link>
             </div>
         </>

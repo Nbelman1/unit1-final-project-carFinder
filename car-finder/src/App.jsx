@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 import './index.css';
 import "./components/main-page/main.css";
@@ -37,7 +37,11 @@ function App() {
 					<Route path="/contact-us" element={<ContactUs />} />
 					<Route path="/form-submitted" element={<FormSubmitted />} />
 					<Route path="/leave-confirmation" element={<LeaveConfirmation 
-						currentQuestion={currentQuestion}/>} 
+						setUserAnswers={setUserAnswers}	
+						setUserResponse={setUserResponse}
+						setCurrentQuestion={setCurrentQuestion}
+						currentQuestion={currentQuestion}
+						setShowingFollowUp={setShowingFollowUp} />} 
 					/>
 					<Route path="/quiz" element={<Question 
 						userAnswers={userAnswers} 

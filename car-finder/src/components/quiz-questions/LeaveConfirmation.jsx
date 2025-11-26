@@ -1,13 +1,17 @@
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import leaveConfirmHero from "/images/hero-images/driving-on-highway.jpg";
 
-const LeaveConfirmation = ({ setUserAnswers, setUserResponse, setCurrentQuestion, currentQuestion }) => {
+const LeaveConfirmation = ({ setUserAnswers, setUserResponse, setCurrentQuestion, currentQuestion, setShowingFollowUp }) => {
+
+    const navigateTo = useNavigate();
 
     const resetQuiz = () => {
 		setUserAnswers([]);
 		setUserResponse("");
 		setCurrentQuestion(0);
-	}
+        setShowingFollowUp(false);
+        navigateTo("/quiz");
+	};
 
     return (
         <div className="container">
@@ -20,12 +24,12 @@ const LeaveConfirmation = ({ setUserAnswers, setUserResponse, setCurrentQuestion
             <p>Heads up - by starting over, you will lose all your progress. Are you sure you want to restart?</p>
 
             <div className="button-container">
-                <Link 
+                <button 
                     onClick={resetQuiz}
-                    to="/quiz" 
-                    className="button-standard red">
+                    className="button-standard red"
+                    style={{ zIndex: 1000 }}>
                         Start over
-                </Link>
+                </button>
                 <Link 
                     to="/quiz" 
                     state={{currentQuestion : currentQuestion}}

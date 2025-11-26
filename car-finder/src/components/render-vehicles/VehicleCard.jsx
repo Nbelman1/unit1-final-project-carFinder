@@ -11,7 +11,7 @@ const VehicleCard = ({ id }) => {
     return (
 
         <div className="card-container">
-            <img src={car.imageSource} alt="{car.vehicleShape}" />
+            <img src={car.imageSource} alt={car.vehicleShape} />
             <div className="details-container">
                 <h1>{vehicleModel}</h1>
                 <p>Vehicle Type: <strong>{car.vehicleShape}</strong></p>
