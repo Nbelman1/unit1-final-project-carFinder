@@ -1,4 +1,16 @@
-export const carData = [
+interface CarOption {
+    id: number;
+    modelYear: number;
+    manufacturer: string;
+    modelName: string;
+    maxPassengers: number;
+    vehicleShape: string;
+    powertrain: string[];
+    imageSource: string;
+    tags: string[];
+}
+
+export const carData: CarOption[] = [
 
     {
         id: 0,

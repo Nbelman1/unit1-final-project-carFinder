@@ -1,4 +1,16 @@
-export const mainQuestions = 
+interface QuestionOption {
+    id: number;
+    question: string;
+    answer: AnswerOption[];
+}
+
+interface AnswerOption {
+    answerText: string;
+    modalContent: string;
+}
+
+export const mainQuestions: QuestionOption[] = 
+
 [
     {
         // first question
@@ -98,7 +110,7 @@ export const mainQuestions =
     }
 ];
 
-export const followUpQuestions = [
+export const followUpQuestions: QuestionOption[] = [
 
     {
         // follow up question for "tackling daily life" answerText in question id 0
