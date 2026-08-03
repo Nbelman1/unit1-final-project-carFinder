@@ -1,4 +1,4 @@
-interface CarOption {
+export interface CarOption {
     id: number;
     modelYear: number;
     manufacturer: string;

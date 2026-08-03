@@ -3,6 +3,8 @@ import { carData } from "./carData.js";
 import VehicleCard from "./VehicleCard.jsx";
 import { Link, useLocation } from "react-router";
 
+// TODO: move business logic to a util folder
+
 const Results = () => {
 
     const [errorMessage, setErrorMessage] = useState("");
