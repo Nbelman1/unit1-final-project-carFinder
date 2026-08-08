@@ -7,7 +7,6 @@ export interface VehicleCardProps {
     car: CarOption;
 }
 
-// TODO: check results page, needs to pass an array of car objects instead of array of id's
 const VehicleCard = ({ car }: VehicleCardProps) => {
 
     const vehicleModel = `${car.modelYear} ${car.manufacturer} ${car.modelName}`;
