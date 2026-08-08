@@ -1,7 +1,7 @@
 import "./vehicles.css";
 import type { CarOption } from "./carData.ts";
 import { VEHICLE_IMAGES } from "./carData.ts";
-import { getVehicleShapeLabel } from "./utils.ts";
+import { getVehicleShapeLabel } from "../../utils/vehicleHelpers.ts";
 
 export interface VehicleCardProps {
     car: CarOption;

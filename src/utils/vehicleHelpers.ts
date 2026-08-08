@@ -1,4 +1,4 @@
-import type { VehicleShapeType } from "./carData";
+import type { VehicleShapeType } from "../components/render-vehicles/carData";
 
 export const getVehicleShapeLabel = (shape: VehicleShapeType): string => {
   switch (shape) {
