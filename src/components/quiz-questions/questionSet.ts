@@ -1,10 +1,10 @@
-interface QuestionOption {
+export interface QuestionOption {
     id: number;
     question: string;
     answer: AnswerOption[];
 }
 
-interface AnswerOption {
+export interface AnswerOption {
     answerText: string;
     modalContent: string;
 }

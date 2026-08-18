@@ -1,5 +1,4 @@
 import { carData, CarOption, VehicleShapeType } from "../components/render-vehicles/carData";
-import { VehicleShapeType } from "../components/render-vehicles/carData";
 
 export type QuizAnswers = [
   string, // index 0: placeholder, not used in filter
@@ -31,16 +30,3 @@ export const getFilteredVehicleIds = (carData: CarOption[], finalAnswers: QuizAn
     .map(car => car.id);
 };
 
-export const getVehicleShapeLabel = (shape: VehicleShapeType): string => {
-  switch (shape) {
-    case "suv2Row": return "2-Row SUV";
-    case "suv3Row": return "3-Row SUV";
-    case "car4Door": return "4-Door Sedan";
-    case "carCoupe": return "Coupe";
-    case "carWagon": return "Wagon";
-    case "vanWorkTruck": return "Cargo Van / Work Truck";
-    case "vanMinivan": return "Minivan";
-    case "truckPickupMid": return "Mid-Size Pickup Truck";
-    case "truckPickupFull": return "Full-Size Pickup Truck";
-  }
-}

@@ -2,35 +2,34 @@ import { useState } from 'react';
 import './question.css';
 import { Link, useNavigate } from 'react-router';
 import { followUpQuestions, mainQuestions } from './questionSet.js';
+import { getQuestionToShow } from '../../utils/quizFlow.js';
 
-const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, currentQuestion, setCurrentQuestion, showingFollowUp, setShowingFollowUp }) => {
+export interface QuestionProps {
+    userAnswers: string[];
+    setUserAnswers: React.Dispatch<React.SetStateAction<string[]>>;
+    userResponse: string;
+    setUserResponse: React.Dispatch<React.SetStateAction<string>>;
+    currentQuestion: number;
+    setCurrentQuestion: React.Dispatch<React.SetStateAction<number>>;
+    showingFollowUp: boolean;
+    setShowingFollowUp: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, currentQuestion, setCurrentQuestion, showingFollowUp, setShowingFollowUp }: QuestionProps) => {
 
     const [errorMessage, setErrorMessage] = useState("");
-    const [openModalIndex, setOpenModalIndex] = useState(null);
+    const [openModalIndex, setOpenModalIndex] = useState<number | null>(null);
     const navigateTo = useNavigate();
 
-    const getQuestionToShow = () => {
-        if (currentQuestion === 1 && !showingFollowUp) {
-            const firstUserAnswer = userAnswers[0];
-            
-            // logic to choose applicable follow-up question
-            if (firstUserAnswer === "Tackling daily life") {
-                return followUpQuestions[0];
-            } else if (firstUserAnswer === "Getting work done") {
-                return followUpQuestions[1];
-            } else if (firstUserAnswer === "Off-road adventures") {
-                return followUpQuestions[2];
-            } else if (firstUserAnswer === "Pure driving enjoyment") {
-                return followUpQuestions[3];
-            }
-        }
-
-        // return question whose id matches current question
-        return mainQuestions[currentQuestion];
-    }
+    const renderedQuestion = getQuestionToShow(
+        currentQuestion,
+        showingFollowUp,
+        userAnswers,
+        mainQuestions,
+        followUpQuestions
+    );
 
     const getCurrentAnswers = () => {
-        const renderedQuestion = getQuestionToShow();
         const answers = renderedQuestion.answer;
         const answerElements = []; // store in array to render answer options
 
@@ -41,13 +40,13 @@ const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, 
                         <input 
                             type="radio" 
                             name={`user-response-${renderedQuestion.id}`} 
-                            id={`id-${renderedQuestion}-answer-${i}`} 
+                            id={`id-${renderedQuestion.id}-answer-${i}`} 
                             value={answers[i].answerText} 
                             checked={userResponse === answers[i].answerText}
                             onChange={(e) => setUserResponse(e.target.value)}
                             required 
                         />
-                        <label htmlFor={`id-${renderedQuestion}-answer-${i}`}>
+                        <label htmlFor={`id-${renderedQuestion.id}-answer-${i}`}>
                             {answers[i].answerText}
                         </label> <strong
                             onClick={() => setOpenModalIndex(i)}
@@ -63,7 +62,6 @@ const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, 
     };
 
     const getCurrentQuestion = () => {
-        const renderedQuestion = getQuestionToShow();
         const answers = renderedQuestion.answer;
 
         if (currentQuestion >= mainQuestions.length) {
@@ -102,7 +100,7 @@ const Question = ({ userAnswers, setUserAnswers, userResponse, setUserResponse, 
         );
     };
 
-    const validateForm = (event) => {
+    const validateForm = (event: React.MouseEvent<HTMLButtonElement>) => {
         const onLastQuestion = (currentQuestion === mainQuestions.length -1);
 
         // early return to stop currentQuestion from becoming 4
