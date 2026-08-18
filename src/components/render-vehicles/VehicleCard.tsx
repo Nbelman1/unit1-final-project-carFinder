@@ -9,6 +9,8 @@ export interface VehicleCardProps {
 
 const VehicleCard = ({ car }: VehicleCardProps) => {
 
+    const assignedImage = VEHICLE_IMAGES[car.vehicleShape];
+    const readableShapeLabel = getVehicleShapeLabel(car.vehicleShape);
     const vehicleModel = `${car.modelYear} ${car.manufacturer} ${car.modelName}`;
     const powertrains = car.powertrain.join(", "); // join() keeps powertrain options in single line
     const tags = car.tags.join(", ");
@@ -16,10 +18,10 @@ const VehicleCard = ({ car }: VehicleCardProps) => {
 
     return (
         <div className="card-container">
-            <img src={VEHICLE_IMAGES[car.vehicleShape]} alt={shapeLabel} />
+            <img src={assignedImage} alt={shapeLabel} />
             <div className="details-container">
                 <h1>{vehicleModel}</h1>
-                <p>Vehicle Type: <strong>{car.vehicleShape}</strong></p>
+                <p>Vehicle Type: <strong>{readableShapeLabel}</strong></p>
                 <p>Max passengers: <strong>{car.maxPassengers}</strong></p>
                 <p>Available powertrains: <strong>{powertrains}</strong></p>
                 <p>Recommended activities: <strong>{tags}</strong></p>
