@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import { validateContactForm } from "../utils/contactHelpers";
 
 const ContactUs = () => {
 
@@ -15,48 +16,6 @@ const ContactUs = () => {
 
     const navigateTo = useNavigate();
 
-    const validateForm = () => {
-        let isFormValid = true;
-
-        if (!firstNameValue) {
-            setErrorFirstName("Please enter your first name.");
-            isFormValid = false;
-        } else {
-            setErrorFirstName("");
-            isFormValid = true;
-        }
-
-        if (!lastNameValue) {
-            setErrorLastName("Please enter your last name.");
-            isFormValid = false;
-        } else {
-            setErrorLastName("");
-            isFormValid = true;
-        }
-
-        if (!emailValue) {
-            setErrorEmail("Please enter your email address.");
-            isFormValid = false;
-        } else if (emailValue && !emailValue.includes("@")) {
-            setErrorEmail("Email must include the at symbol `@`.");
-            isFormValid = false;
-        } else {
-            setErrorEmail("");
-            isFormValid = true;
-        }
-
-        if (!feedbackValue) {
-            setErrorFeedback("Please enter feedback.");
-            isFormValid = false;
-        } else {
-            setErrorFeedback("");
-            isFormValid = true;
-        }
-        
-        if (isFormValid) {
-            navigateTo("/form-submitted");
-        }
-    }; 
 
     return (
         <div className="container"> 
