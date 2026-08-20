@@ -1,7 +1,16 @@
 import { Link, useNavigate } from "react-router";
+// @ts-ignore
 import leaveConfirmHero from "/images/hero-images/driving-on-highway.jpg";
 
-const LeaveConfirmation = ({ setUserAnswers, setUserResponse, setCurrentQuestion, currentQuestion, setShowingFollowUp }) => {
+export interface LeaveConfirmationProps {
+    setUserAnswers: React.Dispatch<React.SetStateAction<string[]>>;
+    setUserResponse: React.Dispatch<React.SetStateAction<string>>;
+    setCurrentQuestion: React.Dispatch<React.SetStateAction<number>>;
+    currentQuestion: number;
+    setShowingFollowUp: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const LeaveConfirmation = ({ setUserAnswers, setUserResponse, setCurrentQuestion, currentQuestion, setShowingFollowUp }: LeaveConfirmationProps) => {
 
     const navigateTo = useNavigate();
 
@@ -32,7 +41,7 @@ const LeaveConfirmation = ({ setUserAnswers, setUserResponse, setCurrentQuestion
                 </button>
                 <Link 
                     to="/quiz" 
-                    state={{currentQuestion : currentQuestion}}
+                    state={ currentQuestion }
                     className="button-standard yellow">
                         Continue quiz
                 </Link>

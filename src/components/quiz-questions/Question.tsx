@@ -1,4 +1,5 @@
 import { useState } from 'react';
+// @ts-ignore
 import './question.css';
 import { Link, useNavigate } from 'react-router';
 import { followUpQuestions, mainQuestions } from './questionSet.js';
