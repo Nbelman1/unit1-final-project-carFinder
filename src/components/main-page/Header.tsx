@@ -1,6 +1,13 @@
 import { Link } from 'react-router';
 
-const Header = ({ setUserAnswers, setUserResponse, setCurrentQuestion, setShowingFollowUp }) => {
+export interface HeaderProps {
+	setUserAnswers: React.Dispatch<React.SetStateAction<string[]>>;
+	setUserResponse: React.Dispatch<React.SetStateAction<string>>;
+	setCurrentQuestion: React.Dispatch<React.SetStateAction<number>>;
+	setShowingFollowUp: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Header = ({ setUserAnswers, setUserResponse, setCurrentQuestion, setShowingFollowUp }: HeaderProps) => {
 
 	const resetQuiz = () => {
 		setUserAnswers([]);

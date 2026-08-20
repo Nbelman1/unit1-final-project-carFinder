@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+// @ts-ignore
 import homeHero from "/images/hero-images/keys-to-car.jpg";
 
 const Home = () => {
