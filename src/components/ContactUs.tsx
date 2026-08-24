@@ -16,6 +16,18 @@ const ContactUs = () => {
 
     const navigateTo = useNavigate();
 
+    const validateForm = () => {
+        const report = validateContactForm(firstNameValue, lastNameValue, emailValue, feedbackValue);
+
+        setErrorFirstName(report.errors.firstName);
+        setErrorLastName(report.errors.lastName);
+        setErrorEmail(report.errors.email);
+        setErrorFeedback(report.errors.feedback);
+
+        if (report.isValid) {
+            navigateTo("/form-submitted");
+        }
+    }
 
     return (
         <div className="container"> 
@@ -77,12 +89,12 @@ const ContactUs = () => {
                     
                     <br />
                     
-                    <textarea id="feedback" name="feedback" rows="5" placeholder="Enter your questions, comments, or concerns" maxLength="1000" 
+                    <textarea id="feedback" name="feedback" rows={5} placeholder="Enter your questions, comments, or concerns" maxLength={1000} 
                     onChange={(e) => setFeedbackValue(e.target.value)} required></textarea>
                 </form>
 
                 <div className="button-centered">
-                    <button type="submit" className="button-standard yellow" onClick={validateForm}>Send it</button>
+                    <button type="submit" className="button-standard yellow" onClick={validateContactForm}>Send it</button>
                 </div>
 
             </fieldset>
